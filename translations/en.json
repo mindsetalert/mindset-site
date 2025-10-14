@@ -1,0 +1,125 @@
+{
+  "nav": {
+    "features": "Features",
+    "how": "How it works",
+    "pricing": "Pricing",
+    "faq": "FAQ",
+    "buy": "Buy",
+    "download": "Download"
+  },
+  "hero": {
+    "title": "Keep control of your",
+    "titleHighlight": "trading",
+    "titleEnd": "in real time.",
+    "description": "The",
+    "appName": "Mindset – Alert Strategy",
+    "description2": "application monitors your P&L via OCR, enforces your risk rules (Max Loss, Drawdown, Daily Goal) and triggers",
+    "description3": "audio/voice",
+    "description4": "alerts instantly to protect your capital.",
+    "buyNow": "Buy now",
+    "seeHow": "See how it works"
+  },
+  "socialProof": {
+    "voiceAlerts": "✅ Voice alerts in French/English, adjustable in real time.",
+    "ocrMultiBroker": "✅ Multi-broker P&L OCR reading (customizable zone)."
+  },
+  "features": {
+    "title": "Features",
+    "items": [
+      {
+        "title": "Automated discipline",
+        "description": "Set your limits. The software monitors and alerts in real time to prevent you from going off track."
+      },
+      {
+        "title": "Robust Audio/Voice",
+        "description": "pyttsx3 TTS re-initialized on each reading + portable backup beeps, even if your sound card disconnects."
+      },
+      {
+        "title": "International",
+        "description": "EN/FR toggle without restart, designed for 4h–11h30 ET sessions and beyond."
+      },
+      {
+        "title": "Express setup",
+        "description": "Select the P&L zone, choose your beeps/voice and let it run during your session."
+      },
+      {
+        "title": "Security",
+        "description": "Global error handling: crash log + message instead of quitting, to avoid bad surprises."
+      },
+      {
+        "title": "Updates",
+        "description": "Quick fixes and continuous improvement based on feedback from active traders."
+      }
+    ]
+  },
+  "howItWorks": {
+    "title": "How it works",
+    "steps": [
+      "Download and install the app (Windows installation assistant).",
+      "Enter your license key (purchase email).",
+      "Select the P&L zone on your screen and test voice/beeps.",
+      "Set your rules: Max Loss, Drawdown, Daily Goal, Red→Green.",
+      "Let the app run; it alerts you immediately on breach."
+    ]
+  },
+  "pricing": {
+    "title": "Pricing",
+    "subtitle": "Choose the plan that suits you. Taxes calculated at payment.",
+    "monthly": {
+      "title": "Monthly",
+      "description": "1 workstation · Renewed monthly",
+      "price": "$29.99",
+      "period": "CAD /month",
+      "features": [
+        "✔ Per-machine license",
+        "✔ Updates included",
+        "✔ Email support"
+      ],
+      "button": "Buy Monthly",
+      "note": "Cancel anytime."
+    },
+    "yearly": {
+      "title": "Yearly",
+      "description": "1 workstation · Annual billing",
+      "price": "$323.90",
+      "period": "CAD /year",
+      "features": [
+        "✔ Per-machine license",
+        "✔ Updates included",
+        "✔ Priority support",
+        "✔ Beta access"
+      ],
+      "button": "Buy Yearly",
+      "note": "One-time billing, annual renewal.",
+      "discount": "Save 10%"
+    },
+    "disclaimer": "* Prices are indicative for the mockup. We will adjust after validation."
+  },
+  "faq": {
+    "title": "FAQ",
+    "questions": [
+      {
+        "question": "What OS is supported?",
+        "answer": "Windows 10/11 (64-bit)."
+      },
+      {
+        "question": "How to re-download?",
+        "answer": "A link + license key are sent to you by email after purchase."
+      },
+      {
+        "question": "Can I change PC?",
+        "answer": "Yes, via support we can reset your license once per year."
+      },
+      {
+        "question": "Is there a demo?",
+        "answer": "A demo limited to beeps (without TTS) will be offered."
+      }
+    ]
+  },
+  "footer": {
+    "copyright": "© {year} Mindset – Alert Strategy",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "support": "Support"
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "nav": {
+    "features": "Avantages",
+    "how": "Instructions",
+    "pricing": "Tarifs",
+    "faq": "FAQ",
+    "buy": "Acheter",
+    "download": "Télécharger"
+  },
+  "hero": {
+    "title": "Gardez le contrôle de votre",
+    "titleHighlight": "trading",
+    "titleEnd": "en temps réel.",
+    "description": "L'application",
+    "appName": "Mindset – Alert Strategy",
+    "description2": "surveille votre P&L par OCR, impose vos règles de risque (Max Loss, Drawdown, Daily Goal) et déclenche des alertes",
+    "description3": "audio/voix",
+    "description4": "instantanées pour protéger votre capital.",
+    "buyNow": "Acheter maintenant",
+    "seeHow": "Voir les instructions"
+  },
+  "socialProof": {
+    "voiceAlerts": "✅ Alertes vocales en français/anglais, réglables en direct.",
+    "ocrMultiBroker": "✅ Lecture P&L OCR multi-brokers (zone personnalisable)."
+  },
+  "features": {
+    "title": "Avantages",
+    "items": [
+      {
+        "title": "🎯 Discipline",
+        "description": "Définissez vos limites de risque. Notre IA surveille votre P&L et vous alerte instantanément avant que l'émotion ne prenne le dessus. Évitez 90% des pertes émotionnelles."
+      },
+      {
+        "title": "🔊 Audio/Voix robustes",
+        "description": "Votre système d'alerte personnalisé. Un son ou une voix vous prévient immédiatement lorsque vous franchissez vos limites. Demeurez maître de vos actions malgré les émotions."
+      },
+      {
+        "title": "🌍 International",
+        "description": "Votre confort linguistique garanti. Français ou anglais, choisissez votre langue. Maximisez votre performance en restant dans votre zone de confort."
+      },
+      {
+        "title": "⚡ Paramètres",
+        "description": "Configuration simple. En quelques clics, vous êtes opérationnel. Sélectionnez votre zone P&L, choisissez vos alertes et laissez la magie opérer."
+      },
+      {
+        "title": "📊 Suivi & Analyse",
+        "description": "Analysez votre performance en détail. Calendrier mensuel de vos résultats, graphiques d'évolution et objectifs mensuels personnalisés. Transformez vos données en stratégies gagnantes."
+      },
+      {
+        "title": "🔄 Évolution continue",
+        "description": "Grandissez avec nous. Des mises à jour régulières basées sur vos questions et vos commentaires, pour une expérience qui s'améliore constamment."
+      }
+    ]
+  },
+  "howItWorks": {
+    "title": "Instructions",
+    "steps": [
+      "Téléchargez et installez l'appli (assistant d'installation Windows).",
+      "Entrez votre clé de licence (email d'achat).",
+      "Sélectionnez la zone P&L sur votre écran et testez la voix/bips.",
+      "Définissez vos règles: Max Loss, Drawdown, Daily Goal, Red→Green.",
+      "Laissez l'appli tourner; elle vous alerte immédiatement au franchissement."
+    ]
+  },
+  "pricing": {
+    "title": "Tarifs",
+    "subtitle": "Choisissez la formule qui vous convient. Taxes calculées au paiement.",
+    "monthly": {
+      "title": "Mensuel",
+      "description": "1 poste · Renouvelé chaque mois",
+      "price": "$29.99",
+      "period": "CAD /mois",
+      "features": [
+        "✔ Licence par machine",
+        "✔ Mises à jour incluses",
+        "✔ Support par email"
+      ],
+      "button": "Acheter Mensuel",
+      "note": "Annulation à tout moment."
+    },
+    "yearly": {
+      "title": "Annuel",
+      "description": "1 poste · Facturation annuelle",
+      "price": "$323.90",
+      "period": "CAD /an",
+      "features": [
+        "✔ Licence par machine",
+        "✔ Mises à jour incluses",
+        "✔ Support prioritaire",
+        "✔ Accès bêta"
+      ],
+      "button": "Acheter Annuel",
+      "note": "Facturation unique, renouvellement annuel.",
+      "discount": "Économisez 10%"
+    },
+    "disclaimer": "* Les prix sont indicatifs pour la maquette. Nous ajusterons après validation."
+  },
+  "faq": {
+    "title": "FAQ",
+    "questions": [
+      {
+        "question": "Quel OS est supporté ?",
+        "answer": "Windows 10/11 (64-bit)."
+      },
+      {
+        "question": "Comment re-télécharger ?",
+        "answer": "Un lien + clé de licence vous sont envoyés par email après l'achat."
+      },
+      {
+        "question": "Puis-je changer de PC ?",
+        "answer": "Oui, via le support nous pouvons réinitialiser votre licence une fois par an."
+      },
+      {
+        "question": "Y a-t-il une démo ?",
+        "answer": "Une démo limitée aux bips (sans TTS) sera proposée."
+      }
+    ]
+  },
+  "footer": {
+    "copyright": "© {year} Mindset – Alert Strategy",
+    "privacy": "Confidentialité",
+    "terms": "Conditions",
+    "support": "Support"
+  }
+}
