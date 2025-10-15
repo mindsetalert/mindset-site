@@ -5,10 +5,14 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: 'Method not allowed' })
   }
 
-  const { licenseKey, machineId, machineName } = req.body
+  const { licenseKey, hardwareId, deviceName } = req.body
 
   if (!licenseKey) {
     return res.status(400).json({ error: 'License key required' })
+  }
+
+  if (!hardwareId) {
+    return res.status(400).json({ error: 'Hardware ID required' })
   }
 
   try {
@@ -28,28 +32,34 @@ export default async function handler(req, res) {
       return res.status(400).json({ error: 'License expired' })
     }
 
-    // Vérifier si la licence est déjà active sur une autre machine
-    if (license.is_active && license.machine_id !== machineId) {
-      return res.status(400).json({ 
-        error: 'License already in use on another machine',
+    // Vérifier si la licence est déjà activée sur un autre appareil
+    if (license.hardware_id && license.hardware_id !== hardwareId) {
+      return res.status(403).json({ 
+        error: 'License already activated on another device',
         details: {
-          currentMachine: license.machine_name,
-          lastUsed: license.last_used_at
+          activatedDevice: license.activated_device_name || 'Unknown device',
+          activatedAt: license.activated_at,
+          lastValidation: license.last_validation_at
         }
       })
     }
 
-    // Activer la licence ou mettre à jour l'utilisation
+    // Activer la licence ou mettre à jour la validation
     const updateData = {
       is_active: true,
-      last_used_at: new Date().toISOString(),
-      machine_id: machineId,
-      machine_name: machineName
+      hardware_id: hardwareId,
+      activated_device_name: deviceName || 'Unknown device',
+      last_validation_at: new Date().toISOString(),
+      // Conserver les anciennes colonnes pour compatibilité
+      machine_id: hardwareId,
+      machine_name: deviceName,
+      last_used_at: new Date().toISOString()
     }
 
     // Si c'est la première activation
     if (!license.activated_at) {
       updateData.activated_at = new Date().toISOString()
+      updateData.status = 'active'
     }
 
     const { error: updateError } = await supabaseAdmin

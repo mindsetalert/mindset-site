@@ -5,10 +5,10 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: 'Method not allowed' })
   }
 
-  const { licenseKey, machineId } = req.body
+  const { licenseKey, hardwareId } = req.body
 
-  if (!licenseKey || !machineId) {
-    return res.status(400).json({ error: 'License key and machine ID required' })
+  if (!licenseKey || !hardwareId) {
+    return res.status(400).json({ error: 'License key and hardware ID required' })
   }
 
   try {
@@ -23,16 +23,22 @@ export default async function handler(req, res) {
       return res.status(404).json({ error: 'License not found' })
     }
 
-    // Vérifier que c'est bien la même machine
-    if (license.machine_id !== machineId) {
-      return res.status(400).json({ error: 'Machine ID mismatch' })
+    // Vérifier que c'est bien le même appareil (sécurité)
+    if (license.hardware_id && license.hardware_id !== hardwareId) {
+      return res.status(403).json({ error: 'Cannot deactivate from different device' })
     }
 
-    // Désactiver la licence
+    // Désactiver la licence et effacer le hardware_id
     const { error: updateError } = await supabaseAdmin
       .from('licenses')
       .update({ 
         is_active: false,
+        hardware_id: null,
+        activated_device_name: null,
+        last_validation_at: new Date().toISOString(),
+        // Compatibilité anciennes colonnes
+        machine_id: null,
+        machine_name: null,
         last_used_at: new Date().toISOString()
       })
       .eq('id', license.id)
