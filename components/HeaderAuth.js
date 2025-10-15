@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { supabase } from '../lib/supabase';
+import { useTranslation } from '../hooks/useTranslation';
 
 export default function HeaderAuth() {
+  const { t } = useTranslation();
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
 
@@ -36,17 +38,17 @@ export default function HeaderAuth() {
       <div className="mx-auto max-w-5xl px-4 py-3 flex items-center justify-between">
         <div />
         {loading ? (
-          <div className="text-neutral-400 text-sm">Chargement…</div>
+          <div className="text-neutral-400 text-sm">{t('header.loading')}</div>
         ) : user ? (
           <div className="flex items-center gap-4">
             <span className="text-neutral-300 text-sm hidden sm:inline">{user.email}</span>
-            <Link href="/account" className="text-amber-400 hover:underline">Mon compte</Link>
-            <button onClick={handleLogout} className="text-neutral-300 hover:text-red-400">Déconnexion</button>
+            <Link href="/account" className="text-amber-400 hover:underline">{t('header.myAccount')}</Link>
+            <button onClick={handleLogout} className="text-neutral-300 hover:text-red-400">{t('header.logout')}</button>
           </div>
         ) : (
           <div className="flex items-center gap-4">
-            <Link href="/login" className="text-amber-400 hover:underline">Connexion</Link>
-            <Link href="/register" className="text-neutral-300 hover:underline">Créer un compte</Link>
+            <Link href="/login" className="text-amber-400 hover:underline">{t('header.login')}</Link>
+            <Link href="/register" className="text-neutral-300 hover:underline">{t('header.register')}</Link>
           </div>
         )}
       </div>

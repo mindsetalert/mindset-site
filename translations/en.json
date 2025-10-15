@@ -1,4 +1,11 @@
 {
+  "header": {
+    "loading": "Loading…",
+    "myAccount": "My Account",
+    "logout": "Logout",
+    "login": "Login",
+    "register": "Create Account"
+  },
   "nav": {
     "features": "Features",
     "how": "How it works",

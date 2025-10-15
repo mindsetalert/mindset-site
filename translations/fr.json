@@ -1,4 +1,11 @@
 {
+  "header": {
+    "loading": "Chargement…",
+    "myAccount": "Mon compte",
+    "logout": "Déconnexion",
+    "login": "Connexion",
+    "register": "Créer un compte"
+  },
   "nav": {
     "features": "Avantages",
     "how": "Instructions",
