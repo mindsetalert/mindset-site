@@ -210,15 +210,28 @@ export default async function handler(req, res) {
             max_downloads: 999999, // illimité
           });
 
-          // Send email with download link and license key
+          // Send email with download link, license key, and invoice
           try {
             const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://mindset-site.vercel.app';
+            
+            // Récupérer l'URL de la facture Stripe
+            let invoiceUrl = null;
+            if (session.invoice) {
+              try {
+                const invoice = await stripe.invoices.retrieve(session.invoice);
+                invoiceUrl = invoice.hosted_invoice_url; // URL publique de la facture
+              } catch (invoiceErr) {
+                console.error('Failed to retrieve invoice:', invoiceErr?.message);
+              }
+            }
+            
             if (customerEmail) {
               await sendDownloadEmail({ 
                 to: customerEmail, 
                 token, 
                 siteUrl,
-                licenseKey: licenseRow.license_key 
+                licenseKey: licenseRow.license_key,
+                invoiceUrl
               });
             }
           } catch (e) {
