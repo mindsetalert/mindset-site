@@ -27,28 +27,28 @@
     "title": "Features",
     "items": [
       {
-        "title": "Automated discipline",
-        "description": "Set your limits. The software monitors and alerts in real time to prevent you from going off track."
+        "title": "🎯 Automated Discipline",
+        "description": "Set your risk limits once. Our AI monitors your P&L in real-time and alerts you instantly before emotions take over. Avoid 90% of emotional losses."
       },
       {
-        "title": "Robust Audio/Voice",
-        "description": "pyttsx3 TTS re-initialized on each reading + portable backup beeps, even if your sound card disconnects."
+        "title": "🔊 Robust Audio/Voice",
+        "description": "Your personalized alert system. A sound or voice warns you immediately when you breach your limits. Stay in control despite emotions."
       },
       {
-        "title": "International",
-        "description": "EN/FR toggle without restart, designed for 4h–11h30 ET sessions and beyond."
+        "title": "🌍 International",
+        "description": "Your linguistic comfort guaranteed. French or English, choose your language. Maximize your performance by staying in your comfort zone."
       },
       {
-        "title": "Express setup",
-        "description": "Select the P&L zone, choose your beeps/voice and let it run during your session."
+        "title": "⚡ Quick Setup",
+        "description": "Simple configuration. In a few clicks, you're operational. Select your P&L zone, choose your alerts and let the magic happen."
       },
       {
-        "title": "Security",
-        "description": "Global error handling: crash log + message instead of quitting, to avoid bad surprises."
+        "title": "📊 Tracking & Analysis",
+        "description": "Analyze your performance in detail. Monthly calendar of your results, evolution charts and personalized monthly goals. Transform your data into winning strategies."
       },
       {
-        "title": "Updates",
-        "description": "Quick fixes and continuous improvement based on feedback from active traders."
+        "title": "🔄 Continuous Evolution",
+        "description": "Grow with us. Regular updates based on your questions and feedback, for an experience that constantly improves."
       }
     ]
   },
