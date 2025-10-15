@@ -164,23 +164,106 @@ else:
 run_main_application()
 ```
 
-### 2. Périodiquement (optionnel, toutes les 24h)
+### 2. Validation périodique (RECOMMANDÉ - toutes les 6 heures)
+
+**Pourquoi c'est important:**
+- Empêche l'utilisation si l'abonnement est annulé
+- Détecte si la licence a été révoquée ou expirée
+- Empêche le partage de licences (si la clé est utilisée ailleurs, elle sera bloquée ici)
 
 ```python
 import time
-from threading import Thread
+import sys
+from threading import Thread, Event
 
-def periodic_validation(license_key):
-    """Valide la licence toutes les 24h en arrière-plan"""
-    while True:
-        time.sleep(24 * 60 * 60)  # 24 heures
-        if not validate_license(license_key):
-            print("❌ Licence invalide. Le programme va se fermer.")
-            sys.exit(1)
+class LicenseValidator:
+    def __init__(self, license_key):
+        self.license_key = license_key
+        self.stop_event = Event()
+        self.validation_interval = 6 * 60 * 60  # 6 heures
+        
+    def periodic_validation(self):
+        """
+        Valide la licence toutes les 6h en arrière-plan.
+        Ferme le programme si la licence devient invalide.
+        """
+        while not self.stop_event.is_set():
+            # Attendre 6h (ou jusqu'à stop)
+            if self.stop_event.wait(self.validation_interval):
+                break
+                
+            # Valider la licence
+            print("🔄 Vérification périodique de la licence...")
+            if not validate_license(self.license_key):
+                print("❌ Licence invalide ou révoquée. Le programme va se fermer.")
+                print("   Raisons possibles:")
+                print("   - Abonnement annulé")
+                print("   - Paiement échoué")
+                print("   - Licence utilisée sur un autre appareil")
+                # Afficher un message à l'utilisateur via l'UI
+                show_error_dialog("Licence invalide", 
+                                 "Votre licence a été révoquée ou est expirée.\n"
+                                 "Veuillez vérifier votre abonnement ou contacter le support.")
+                sys.exit(1)
+    
+    def start(self):
+        """Démarre la validation périodique en arrière-plan"""
+        self.thread = Thread(target=self.periodic_validation, daemon=True)
+        self.thread.start()
+        print("✅ Validation périodique activée (toutes les 6h)")
+    
+    def stop(self):
+        """Arrête la validation (utile pour les tests)"""
+        self.stop_event.set()
 
-# Lancer en thread daemon
-validation_thread = Thread(target=periodic_validation, args=(license_key,), daemon=True)
-validation_thread.start()
+# Utilisation au démarrage du programme
+license_key = load_saved_license()
+if license_key and validate_license(license_key):
+    # Démarrer la validation périodique
+    validator = LicenseValidator(license_key)
+    validator.start()
+    
+    # Lancer le programme principal
+    run_main_application()
+else:
+    print("❌ Licence invalide")
+    sys.exit(1)
+```
+
+### Alternative: Validation à chaque action critique
+
+Pour plus de sécurité, valide aussi lors d'actions importantes:
+
+```python
+def on_start_trading_session():
+    """Valide avant de permettre le trading"""
+    license_key = load_saved_license()
+    if not validate_license(license_key):
+        show_error("Licence invalide. Impossible de démarrer une session de trading.")
+        return False
+    return True
+
+def on_save_profile():
+    """Valide avant de sauvegarder un profil"""
+    license_key = load_saved_license()
+    if not validate_license(license_key):
+        show_error("Licence invalide. Impossible de sauvegarder.")
+        return False
+    return True
+```
+
+### Fonction helper pour afficher des dialogues
+
+```python
+import tkinter as tk
+from tkinter import messagebox
+
+def show_error_dialog(title, message):
+    """Affiche une boîte de dialogue d'erreur (thread-safe)"""
+    root = tk.Tk()
+    root.withdraw()  # Cacher la fenêtre principale
+    messagebox.showerror(title, message)
+    root.destroy()
 ```
 
 ### 3. Bouton "Désactiver la licence" dans l'UI
