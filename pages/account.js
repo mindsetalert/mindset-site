@@ -58,6 +58,22 @@ export default function AccountPage() {
     }
   };
 
+  const handleManageSubscription = async () => {
+    try {
+      const session = await supabase.auth.getSession();
+      const accessToken = session?.data?.session?.access_token;
+      const res = await fetch('/api/stripe/portal', {
+        method: 'POST',
+        headers: accessToken ? { Authorization: `Bearer ${accessToken}` } : {},
+      });
+      const js = await res.json();
+      if (!res.ok) throw new Error(js.error || 'Erreur');
+      window.location.href = js.url;
+    } catch (e) {
+      alert(e.message);
+    }
+  };
+
   return (
     <div className="min-h-screen bg-neutral-950 text-neutral-100">
       <div className="mx-auto max-w-3xl px-4 py-10">
@@ -68,8 +84,21 @@ export default function AccountPage() {
         </div>
         <h1 className="text-2xl font-semibold mb-6">Mon compte</h1>
         <div className="rounded-xl border border-neutral-800 bg-neutral-900/40 p-6">
-          <div className="text-sm text-neutral-400">Email</div>
-          <div className="text-lg">{user.email}</div>
+          <div className="flex items-center justify-between mb-4">
+            <div>
+              <div className="text-sm text-neutral-400">Email</div>
+              <div className="text-lg">{user.email}</div>
+            </div>
+            <button
+              onClick={handleManageSubscription}
+              className="px-4 py-2 rounded-lg bg-blue-600 hover:bg-blue-500 text-white font-semibold text-sm transition-colors"
+            >
+              Gérer mon abonnement
+            </button>
+          </div>
+          <p className="text-xs text-neutral-500">
+            Annuler, mettre à jour votre carte de paiement, voir vos factures, etc.
+          </p>
         </div>
         <div className="mt-8">
           <div className="flex items-center justify-between">
