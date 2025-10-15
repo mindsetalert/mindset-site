@@ -10,14 +10,8 @@ const PaymentMethodSelector = ({ selectedMethod, onMethodChange, plan }) => {
       description: 'Visa, Mastercard, Amex, Apple Pay, Google Pay',
       icon: '💳',
       component: StripePayment
-    },
-    {
-      id: 'paypal',
-      name: 'PayPal',
-      description: 'Payer avec votre compte PayPal',
-      icon: '💙',
-      component: PayPalPayment
     }
+    // PayPal désactivé temporairement
   ];
 
   return (
