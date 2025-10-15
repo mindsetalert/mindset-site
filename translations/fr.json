@@ -71,7 +71,7 @@
   },
   "pricing": {
     "title": "Tarifs",
-    "subtitle": "Choisissez la formule qui vous convient. Taxes calculées au paiement.",
+    "subtitle": "Choisissez la formule qui vous convient. Taxes incluses dans le prix.",
     "monthly": {
       "title": "Mensuel",
       "description": "1 poste · Renouvelé chaque mois",

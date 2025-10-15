@@ -71,7 +71,7 @@
   },
   "pricing": {
     "title": "Pricing",
-    "subtitle": "Choose the plan that suits you. Taxes calculated at payment.",
+    "subtitle": "Choose the plan that suits you. Taxes included in price.",
     "monthly": {
       "title": "Monthly",
       "description": "1 workstation · Renewed monthly",
