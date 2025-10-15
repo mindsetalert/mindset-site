@@ -54,20 +54,80 @@ export default async function handler(req, res) {
       .update({ downloads_used: row.downloads_used + 1 })
       .eq('id', row.id);
 
-    // Serve file from /public/downloads
+    // Download from GitHub Private Release
     const fileName = row.file_key || 'MindsetTrading_Setup.exe';
-    const filePath = path.join(process.cwd(), 'public', 'downloads', fileName);
-    if (!fs.existsSync(filePath)) {
-      return res.status(404).json({ error: 'File not found' });
+    const githubToken = process.env.GITHUB_TOKEN;
+    
+    if (!githubToken) {
+      return res.status(500).json({ error: 'Server not configured (GitHub token missing)' });
     }
 
-    res.setHeader('Content-Disposition', `attachment; filename="${fileName}"`);
-    const stream = fs.createReadStream(filePath);
-    stream.pipe(res);
+    // GitHub Release URL (private repo)
+    const releaseUrl = `https://api.github.com/repos/mindsetalert/mindset-downloads/releases/tags/v1.0.1`;
+    
+    try {
+      // Fetch release info
+      const releaseResponse = await fetch(releaseUrl, {
+        headers: {
+          'Authorization': `token ${githubToken}`,
+          'Accept': 'application/vnd.github.v3+json',
+          'User-Agent': 'Mindset-Site'
+        }
+      });
+      
+      if (!releaseResponse.ok) {
+        throw new Error('Release not found');
+      }
+      
+      const releaseData = await releaseResponse.json();
+      const asset = releaseData.assets.find(a => a.name === fileName);
+      
+      if (!asset) {
+        return res.status(404).json({ error: 'File not found in release' });
+      }
+      
+      // Fetch file from GitHub
+      const fileResponse = await fetch(asset.url, {
+        headers: {
+          'Authorization': `token ${githubToken}`,
+          'Accept': 'application/octet-stream',
+          'User-Agent': 'Mindset-Site'
+        }
+      });
+      
+      if (!fileResponse.ok) {
+        throw new Error('Failed to download file');
+      }
+      
+      // Stream file to client
+      res.setHeader('Content-Disposition', `attachment; filename="${fileName}"`);
+      res.setHeader('Content-Type', 'application/octet-stream');
+      res.setHeader('Content-Length', asset.size);
+      
+      const reader = fileResponse.body.getReader();
+      const stream = new ReadableStream({
+        async start(controller) {
+          while (true) {
+            const { done, value } = await reader.read();
+            if (done) break;
+            controller.enqueue(value);
+          }
+          controller.close();
+        }
+      });
+      
+      for await (const chunk of stream) {
+        res.write(chunk);
+      }
+      res.end();
+    } catch (err) {
+      return res.status(500).json({ error: 'Download failed: ' + err.message });
+    }
   } catch (e) {
     res.status(500).json({ error: e.message || 'Server error' });
   }
 }
+
 
 
 
