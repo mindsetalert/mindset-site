@@ -106,11 +106,16 @@ export default async function handler(req, res) {
             max_downloads: 999999, // illimité
           });
 
-          // Send email with download link
+          // Send email with download link and license key
           try {
             const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://mindset-site.vercel.app';
             if (customerEmail) {
-              await sendDownloadEmail({ to: customerEmail, token, siteUrl });
+              await sendDownloadEmail({ 
+                to: customerEmail, 
+                token, 
+                siteUrl,
+                licenseKey: licenseRow.license_key 
+              });
             }
           } catch (e) {
             // Ne pas casser le webhook si l'email échoue
