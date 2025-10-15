@@ -54,7 +54,7 @@ export default async function handler(req, res) {
       .update({ downloads_used: row.downloads_used + 1 })
       .eq('id', row.id);
 
-    // Download from GitHub Private Release
+    // Redirect to GitHub Private Release download URL
     const fileName = row.file_key || 'MindsetTrading_Setup.exe';
     const githubToken = process.env.GITHUB_TOKEN;
     
@@ -86,40 +86,8 @@ export default async function handler(req, res) {
         return res.status(404).json({ error: 'File not found in release' });
       }
       
-      // Fetch file from GitHub
-      const fileResponse = await fetch(asset.url, {
-        headers: {
-          'Authorization': `token ${githubToken}`,
-          'Accept': 'application/octet-stream',
-          'User-Agent': 'Mindset-Site'
-        }
-      });
-      
-      if (!fileResponse.ok) {
-        throw new Error('Failed to download file');
-      }
-      
-      // Stream file to client
-      res.setHeader('Content-Disposition', `attachment; filename="${fileName}"`);
-      res.setHeader('Content-Type', 'application/octet-stream');
-      res.setHeader('Content-Length', asset.size);
-      
-      const reader = fileResponse.body.getReader();
-      const stream = new ReadableStream({
-        async start(controller) {
-          while (true) {
-            const { done, value } = await reader.read();
-            if (done) break;
-            controller.enqueue(value);
-          }
-          controller.close();
-        }
-      });
-      
-      for await (const chunk of stream) {
-        res.write(chunk);
-      }
-      res.end();
+      // Redirect to GitHub download URL (browser will download with GitHub's infrastructure)
+      return res.redirect(302, asset.browser_download_url);
     } catch (err) {
       return res.status(500).json({ error: 'Download failed: ' + err.message });
     }
