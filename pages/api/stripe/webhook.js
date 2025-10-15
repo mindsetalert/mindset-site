@@ -39,6 +39,108 @@ export default async function handler(req, res) {
 
   try {
     switch (event.type) {
+      case 'invoice.payment_succeeded': {
+        // Renouvellement d'abonnement réussi → prolonger la licence
+        const invoice = event.data.object;
+        const subscriptionId = invoice.subscription;
+        
+        if (!subscriptionId) break; // Paiement unique, pas un renouvellement
+        
+        // Trouver la licence associée à cet abonnement
+        const { data: licenses, error: findError } = await supabaseAdmin
+          .from('licenses')
+          .select('*')
+          .eq('subscription_id', subscriptionId)
+          .maybeSingle();
+        
+        if (findError || !licenses) {
+          console.error('License not found for subscription:', subscriptionId);
+          break;
+        }
+        
+        // Déterminer la nouvelle date d'expiration
+        const billingReason = invoice.billing_reason;
+        const isRenewal = billingReason === 'subscription_cycle';
+        
+        if (isRenewal) {
+          // Prolonger de 30 jours (mensuel) ou 365 jours (annuel)
+          const currentExpiry = new Date(licenses.expires_at || Date.now());
+          const plan = licenses.plan || 'monthly';
+          const daysToAdd = plan === 'yearly' ? 365 : 30;
+          const newExpiry = new Date(currentExpiry.getTime() + daysToAdd * 24 * 60 * 60 * 1000);
+          
+          await supabaseAdmin
+            .from('licenses')
+            .update({ 
+              expires_at: newExpiry.toISOString(),
+              status: 'active',
+              is_active: true
+            })
+            .eq('id', licenses.id);
+          
+          console.log(`✅ Licence ${licenses.license_key} renouvelée jusqu'au ${newExpiry.toISOString()}`);
+        }
+        break;
+      }
+      
+      case 'customer.subscription.deleted': {
+        // Abonnement annulé → désactiver la licence
+        const subscription = event.data.object;
+        const subscriptionId = subscription.id;
+        
+        const { data: licenses, error: findError } = await supabaseAdmin
+          .from('licenses')
+          .select('*')
+          .eq('subscription_id', subscriptionId)
+          .maybeSingle();
+        
+        if (findError || !licenses) {
+          console.error('License not found for subscription:', subscriptionId);
+          break;
+        }
+        
+        await supabaseAdmin
+          .from('licenses')
+          .update({ 
+            status: 'cancelled',
+            is_active: false
+          })
+          .eq('id', licenses.id);
+        
+        console.log(`⛔ Licence ${licenses.license_key} désactivée (abonnement annulé)`);
+        break;
+      }
+      
+      case 'invoice.payment_failed': {
+        // Échec de paiement → suspendre la licence
+        const invoice = event.data.object;
+        const subscriptionId = invoice.subscription;
+        
+        if (!subscriptionId) break;
+        
+        const { data: licenses, error: findError } = await supabaseAdmin
+          .from('licenses')
+          .select('*')
+          .eq('subscription_id', subscriptionId)
+          .maybeSingle();
+        
+        if (findError || !licenses) {
+          console.error('License not found for subscription:', subscriptionId);
+          break;
+        }
+        
+        await supabaseAdmin
+          .from('licenses')
+          .update({ 
+            status: 'payment_failed',
+            is_active: false
+          })
+          .eq('id', licenses.id);
+        
+        console.log(`⚠️ Licence ${licenses.license_key} suspendue (échec paiement)`);
+        break;
+      }
+      
       case 'checkout.session.completed': {
         const session = event.data.object;
         // subscription mode => session.subscription holds sub ID
@@ -74,6 +176,8 @@ export default async function handler(req, res) {
           .insert({
             license_key: `LIC-${Math.random().toString(36).slice(2, 10).toUpperCase()}-${Date.now()}`,
             client_id: clientId,
+            subscription_id: subscriptionId,
+            plan: plan,
             status: 'active',
             is_active: true,
             activated_at: new Date().toISOString(),
