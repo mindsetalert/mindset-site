@@ -5,7 +5,9 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: 'Method not allowed' })
   }
 
-  const { licenseKey, hardwareId } = req.body
+  // Support both old format (license_key, machine_key) and new format (licenseKey, hardwareId)
+  const licenseKey = req.body.licenseKey || req.body.license_key
+  const hardwareId = req.body.hardwareId || req.body.machine_key
 
   if (!licenseKey || !hardwareId) {
     return res.status(400).json({ error: 'License key and hardware ID required' })
