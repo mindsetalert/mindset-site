@@ -171,6 +171,12 @@ export default async function handler(req, res) {
           }
         }
 
+        // Calculer la date d'expiration
+        const daysToAdd = plan === 'yearly' ? 365 : 30;
+        const expirationDate = new Date(Date.now() + daysToAdd * 24 * 60 * 60 * 1000);
+        
+        console.log(`📅 Création licence - Plan: ${plan}, Jours: ${daysToAdd}, Expiration: ${expirationDate.toISOString()}`);
+
         const { data: licenseRow, error: licenseError } = await supabaseAdmin
           .from('licenses')
           .insert({
@@ -181,14 +187,14 @@ export default async function handler(req, res) {
             status: 'active',
             is_active: true,
             activated_at: new Date().toISOString(),
-            expires_at: plan === 'yearly'
-              ? new Date(Date.now() + 365*24*60*60*1000).toISOString()
-              : new Date(Date.now() + 30*24*60*60*1000).toISOString(),
+            expires_at: expirationDate.toISOString(),
           })
           .select('*')
           .single();
 
         if (licenseError) throw licenseError;
+        
+        console.log(`✅ Licence créée: ${licenseRow.license_key}, Expire le: ${licenseRow.expires_at}`);
 
         // Generate a download token automatically
         const secret = process.env.DOWNLOAD_SECRET;
