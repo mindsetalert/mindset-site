@@ -52,13 +52,18 @@ export default function MindsetLanding() {
               {t('hero.description')} <strong>{t('hero.appName')}</strong> {t('hero.description2')}
               <em> {t('hero.description3')}</em> {t('hero.description4')}
             </p>
-            <div className="mt-6 flex flex-wrap gap-3">
-              <Link href="/payment" className="px-5 py-3 rounded-2xl bg-amber-500 text-neutral-900 font-semibold hover:bg-amber-400">
-                {t('hero.buyNow')}
+            <div className="mt-6 flex flex-col gap-3">
+              <div className="flex flex-wrap gap-3">
+                <Link href="/payment" className="px-5 py-3 rounded-2xl bg-amber-500 text-neutral-900 font-semibold hover:bg-amber-400">
+                  {t('hero.buyNow')}
+                </Link>
+                <a href="#how" className="px-5 py-3 rounded-2xl border border-neutral-700 hover:border-neutral-500">
+                  {t('hero.seeHow')}
+                </a>
+              </div>
+              <Link href="/register" className="px-5 py-3 rounded-2xl bg-amber-500 text-neutral-900 font-semibold hover:bg-amber-400 text-center w-full md:w-auto">
+                Create Account
               </Link>
-              <a href="#how" className="px-5 py-3 rounded-2xl border border-neutral-700 hover:border-neutral-500">
-                {t('hero.seeHow')}
-              </a>
             </div>
           </div>
 
