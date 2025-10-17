@@ -148,7 +148,9 @@
     "status": "Statut",
     "expires": "Expire",
     "downloadSoftware": "Télécharger le logiciel",
-    "generateLink": "Générer lien"
+    "generateLink": "Générer lien",
+    "buyPlan": "Acheter un forfait",
+    "buyPlanSubtitle": "Choisissez le forfait qui vous convient"
   },
   "contact": {
     "backToHome": "← Retour à l'accueil",

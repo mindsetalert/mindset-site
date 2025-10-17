@@ -139,6 +139,53 @@ export default function AccountPage() {
             </div>
           )}
         </div>
+
+        {/* Section Acheter un forfait */}
+        <div className="mt-12">
+          <h2 className="text-xl font-semibold mb-2">{t('account.buyPlan')}</h2>
+          <p className="text-neutral-400 text-sm mb-6">{t('account.buyPlanSubtitle')}</p>
+          
+          <div className="grid md:grid-cols-2 gap-6">
+            {/* Forfait Mensuel */}
+            <div className="rounded-2xl border border-neutral-800 bg-neutral-900/40 p-6 flex flex-col">
+              <h3 className="text-xl font-semibold">{t('pricing.monthly.title')}</h3>
+              <p className="text-sm text-neutral-300">{t('pricing.monthly.description')}</p>
+              <div className="text-4xl font-black mt-4">
+                {t('pricing.monthly.price')} <span className="text-base font-semibold text-neutral-400">{t('pricing.monthly.period')}</span>
+              </div>
+              <ul className="mt-4 space-y-2 text-sm text-neutral-300 flex-grow">
+                {t('pricing.monthly.features').map((feature, i) => (
+                  <li key={i}>{feature}</li>
+                ))}
+              </ul>
+              <Link href="/payment?plan=monthly" className="block mt-6 px-4 py-3 rounded-xl bg-green-500 text-black font-semibold hover:bg-green-600 text-center">
+                {t('pricing.monthly.button')}
+              </Link>
+              <p className="mt-2 text-xs text-neutral-400">{t('pricing.monthly.note')}</p>
+            </div>
+
+            {/* Forfait Annuel */}
+            <div className="rounded-2xl border border-amber-500/50 bg-neutral-900/40 p-6 flex flex-col relative">
+              <div className="absolute -top-3 right-4 px-3 py-1 bg-amber-500 text-black text-xs font-bold rounded-full">
+                {t('pricing.yearly.discount')}
+              </div>
+              <h3 className="text-xl font-semibold">{t('pricing.yearly.title')}</h3>
+              <p className="text-sm text-neutral-300">{t('pricing.yearly.description')}</p>
+              <div className="text-4xl font-black mt-4">
+                {t('pricing.yearly.price')} <span className="text-base font-semibold text-neutral-400">{t('pricing.yearly.period')}</span>
+              </div>
+              <ul className="mt-4 space-y-2 text-sm text-neutral-300 flex-grow">
+                {t('pricing.yearly.features').map((feature, i) => (
+                  <li key={i}>{feature}</li>
+                ))}
+              </ul>
+              <Link href="/payment?plan=yearly" className="block mt-6 px-4 py-3 rounded-xl bg-green-500 text-black font-semibold hover:bg-green-600 text-center">
+                {t('pricing.yearly.button')}
+              </Link>
+              <p className="mt-2 text-xs text-neutral-400">{t('pricing.yearly.note')}</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

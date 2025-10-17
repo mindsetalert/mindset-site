@@ -148,7 +148,9 @@
     "status": "Status",
     "expires": "Expires",
     "downloadSoftware": "Download Software",
-    "generateLink": "Generate Link"
+    "generateLink": "Generate Link",
+    "buyPlan": "Buy a Plan",
+    "buyPlanSubtitle": "Choose the plan that suits you"
   },
   "contact": {
     "backToHome": "← Back to home",
