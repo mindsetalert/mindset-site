@@ -69,8 +69,8 @@ export default function MindsetLanding() {
           </div>
 
           <div className="relative">
-            <div className="rounded-2xl bg-neutral-900/50 ring-1 ring-neutral-800 p-4">
-              <div className="relative w-full h-[400px] md:h-[500px]">
+            <div className="rounded-2xl bg-neutral-900/50 ring-1 ring-neutral-800 p-6">
+              <div className="relative w-full" style={{ aspectRatio: '16/9' }}>
                 <Image
                   src="/image.png"
                   alt="Interface Mindset - Alert Strategy"
