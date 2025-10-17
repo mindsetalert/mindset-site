@@ -55,7 +55,7 @@ export default function MindsetLanding() {
             </p>
             <div className="mt-6 flex flex-col gap-3">
               <div className="flex flex-wrap gap-3">
-                <Link href="/payment" className="px-5 py-3 rounded-2xl bg-amber-500 text-neutral-900 font-semibold hover:bg-amber-400">
+                <Link href="/payment" className="px-5 py-3 rounded-2xl bg-green-500 text-white font-semibold hover:bg-green-600">
                   {t('hero.buyNow')}
                 </Link>
                 <a href="#how" className="px-5 py-3 rounded-2xl border border-neutral-700 hover:border-neutral-500" onClick={(e) => { e.preventDefault(); const element = document.getElementById('how'); if (element) { const y = element.offsetTop - 200; window.scrollTo({ top: y, behavior: 'smooth' }); } }}>
