@@ -8,11 +8,34 @@ export default function AccountPage() {
   const [licenses, setLicenses] = useState([]);
   const [loadingLicenses, setLoadingLicenses] = useState(false);
 
+  const loadLicenses = async () => {
+    try {
+      setLoadingLicenses(true);
+      const session = await supabase.auth.getSession();
+      const accessToken = session?.data?.session?.access_token;
+      const res = await fetch('/api/account/licenses', {
+        headers: accessToken ? { Authorization: `Bearer ${accessToken}` } : {},
+      });
+      const js = await res.json();
+      if (!res.ok) throw new Error(js.error || 'Erreur chargement licences');
+      setLicenses(js.licenses || []);
+    } catch (e) {
+      alert(e.message);
+    } finally {
+      setLoadingLicenses(false);
+    }
+  };
+
   useEffect(() => {
     const init = async () => {
       const { data } = await supabase.auth.getUser();
       setUser(data?.user ?? null);
       setLoading(false);
+      
+      // Charger automatiquement les licences après avoir chargé l'utilisateur
+      if (data?.user) {
+        loadLicenses();
+      }
     };
     init();
   }, []);
@@ -37,24 +60,6 @@ export default function AccountPage() {
       window.location.href = `/api/download?token=${encodeURIComponent(js.token)}`;
     } catch (e) {
       alert(e.message);
-    }
-  };
-
-  const loadLicenses = async () => {
-    try {
-      setLoadingLicenses(true);
-      const session = await supabase.auth.getSession();
-      const accessToken = session?.data?.session?.access_token;
-      const res = await fetch('/api/account/licenses', {
-        headers: accessToken ? { Authorization: `Bearer ${accessToken}` } : {},
-      });
-      const js = await res.json();
-      if (!res.ok) throw new Error(js.error || 'Erreur chargement licences');
-      setLicenses(js.licenses || []);
-    } catch (e) {
-      alert(e.message);
-    } finally {
-      setLoadingLicenses(false);
     }
   };
 
@@ -136,5 +141,3 @@ export default function AccountPage() {
     </div>
   );
 }
-
-
