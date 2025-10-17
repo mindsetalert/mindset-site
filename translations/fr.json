@@ -12,7 +12,8 @@
     "pricing": "Tarifs",
     "faq": "FAQ",
     "buy": "Acheter",
-    "download": "Télécharger"
+    "download": "Télécharger",
+    "contact": "Contacter"
   },
   "hero": {
     "title": "Gardez le contrôle de votre",
@@ -146,5 +147,22 @@
     "expires": "Expire",
     "downloadSoftware": "Télécharger le logiciel",
     "generateLink": "Générer lien"
+  },
+  "contact": {
+    "backToHome": "← Retour à l'accueil",
+    "title": "Contactez-nous",
+    "subtitle": "Vous avez une question ? Envoyez-nous un message et nous vous répondrons dans les plus brefs délais.",
+    "name": "Nom",
+    "namePlaceholder": "Votre nom",
+    "email": "Email",
+    "emailPlaceholder": "votre@email.com",
+    "subject": "Sujet",
+    "subjectPlaceholder": "De quoi s'agit-il ?",
+    "message": "Message",
+    "messagePlaceholder": "Votre message...",
+    "send": "Envoyer le message",
+    "sending": "Envoi en cours...",
+    "success": "Message envoyé avec succès ! Nous vous répondrons bientôt.",
+    "error": "Erreur lors de l'envoi. Veuillez réessayer."
   }
 }
