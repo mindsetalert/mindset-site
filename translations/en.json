@@ -129,5 +129,22 @@
     "privacy": "Privacy",
     "terms": "Terms",
     "support": "Support"
+  },
+  "account": {
+    "loading": "Loading…",
+    "backToHome": "← Back to home",
+    "title": "My Account",
+    "email": "Email",
+    "manageSubscription": "Manage Subscription",
+    "subscriptionNote": "Cancel, update your payment method, view invoices, etc.",
+    "myLicenses": "My Licenses",
+    "refresh": "Refresh",
+    "loadingLicenses": "Loading…",
+    "noLicenses": "No licenses at the moment.",
+    "license": "License",
+    "status": "Status",
+    "expires": "Expires",
+    "downloadSoftware": "Download Software",
+    "generateLink": "Generate Link"
   }
 }

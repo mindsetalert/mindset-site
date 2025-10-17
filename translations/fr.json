@@ -129,5 +129,22 @@
     "privacy": "Confidentialité",
     "terms": "Conditions",
     "support": "Support"
+  },
+  "account": {
+    "loading": "Chargement…",
+    "backToHome": "← Retour à l'accueil",
+    "title": "Mon compte",
+    "email": "Email",
+    "manageSubscription": "Gérer mon abonnement",
+    "subscriptionNote": "Annuler, mettre à jour votre carte de paiement, voir vos factures, etc.",
+    "myLicenses": "Mes licences",
+    "refresh": "Rafraîchir",
+    "loadingLicenses": "Chargement…",
+    "noLicenses": "Aucune licence pour le moment.",
+    "license": "Licence",
+    "status": "Statut",
+    "expires": "Expire",
+    "downloadSoftware": "Télécharger le logiciel",
+    "generateLink": "Générer lien"
   }
 }
