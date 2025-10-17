@@ -62,7 +62,7 @@ export default function MindsetLanding() {
                 </a>
               </div>
               <Link href="/register" className="px-5 py-3 rounded-2xl bg-amber-500 text-neutral-900 font-semibold hover:bg-amber-400 text-center w-full md:w-auto">
-                Create Account
+                {t('hero.createAccount')}
               </Link>
             </div>
           </div>
