@@ -69,16 +69,15 @@ export default function MindsetLanding() {
           </div>
 
           <div className="relative">
-            <div className="rounded-xl bg-neutral-900/50 ring-1 ring-neutral-800 p-2">
-              <div className="relative w-full h-[500px] md:h-[600px]">
-                <Image
-                  src="/image.png"
-                  alt="Interface Mindset - Alert Strategy"
-                  fill
-                  className="object-contain"
-                  priority
-                />
-              </div>
+            <div className="rounded-xl bg-neutral-900/50 ring-1 ring-neutral-800 p-2 overflow-hidden">
+              <Image
+                src="/image.png"
+                alt="Interface Mindset - Alert Strategy"
+                width={1272}
+                height={924}
+                className="w-full h-auto"
+                priority
+              />
             </div>
             <div className="absolute -bottom-6 -left-6 hidden md:block h-20 w-20 rounded-2xl bg-amber-500/20 blur-2xl" />
           </div>
