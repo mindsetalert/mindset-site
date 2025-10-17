@@ -1,6 +1,7 @@
 {
   "header": {
     "loading": "Chargement…",
+    "home": "Accueil",
     "myAccount": "Mon compte",
     "logout": "Déconnexion",
     "login": "Connexion",

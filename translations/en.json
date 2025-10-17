@@ -1,6 +1,7 @@
 {
   "header": {
     "loading": "Loading…",
+    "home": "Home",
     "myAccount": "My Account",
     "logout": "Logout",
     "login": "Login",
