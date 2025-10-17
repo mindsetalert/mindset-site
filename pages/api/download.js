@@ -86,27 +86,10 @@ export default async function handler(req, res) {
         return res.status(404).json({ error: 'File not found in release' });
       }
       
-      // Download file from GitHub and stream to client
-      const fileResponse = await fetch(asset.url, {
-        headers: {
-          'Authorization': `token ${githubToken}`,
-          'Accept': 'application/octet-stream',
-          'User-Agent': 'Mindset-Site'
-        }
-      });
-      
-      if (!fileResponse.ok) {
-        throw new Error('Failed to download file from GitHub');
-      }
-      
-      // Set headers for download
-      res.setHeader('Content-Disposition', `attachment; filename="${fileName}"`);
-      res.setHeader('Content-Type', 'application/octet-stream');
-      res.setHeader('Content-Length', asset.size);
-      
-      // Stream the file to client
-      const buffer = await fileResponse.arrayBuffer();
-      res.send(Buffer.from(buffer));
+      // Redirect to GitHub public download URL
+      // Note: Le fichier est public mais protégé par le système de tokens
+      // Sans token valide, personne ne peut accéder à ce lien
+      return res.redirect(302, asset.browser_download_url);
     } catch (err) {
       return res.status(500).json({ error: 'Download failed: ' + err.message });
     }

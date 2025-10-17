@@ -37,9 +37,6 @@ export default function MindsetLanding() {
 
           <div className="flex items-center gap-3">
             <LanguageToggle />
-            <Link href="/payment" className="px-3 py-2 rounded-xl bg-amber-500 font-medium text-neutral-900 hover:bg-amber-400">
-              {t('nav.buy')}
-            </Link>
           </div>
         </div>
       </header>
