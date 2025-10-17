@@ -54,7 +54,15 @@ Vous pouvez répondre directement à ${email}
     return res.status(200).json({ success: true });
   } catch (error) {
     console.error('Erreur envoi email contact:', error);
-    return res.status(500).json({ error: 'Erreur lors de l\'envoi du message' });
+    console.error('Error details:', {
+      message: error.message,
+      code: error.code,
+      command: error.command
+    });
+    return res.status(500).json({ 
+      error: 'Erreur lors de l\'envoi du message',
+      details: error.message 
+    });
   }
 }
 
