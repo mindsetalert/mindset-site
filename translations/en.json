@@ -3,6 +3,7 @@
     "loading": "Loading…",
     "home": "Home",
     "myAccount": "My Account",
+    "createAccount": "Create My Account",
     "logout": "Logout",
     "login": "Login",
     "register": "Create Account"

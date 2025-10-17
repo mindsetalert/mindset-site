@@ -43,6 +43,7 @@ export default function HeaderAuth() {
           <div className="flex items-center gap-4">
             <span className="text-neutral-300 text-sm hidden sm:inline">{user.email}</span>
             <Link href="/account" className="text-amber-400 hover:underline">{t('header.myAccount')}</Link>
+            <Link href="/register" className="text-amber-400 hover:underline">{t('header.createAccount')}</Link>
             <button onClick={handleLogout} className="text-neutral-300 hover:text-red-400">{t('header.logout')}</button>
           </div>
         ) : (
