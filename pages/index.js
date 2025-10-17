@@ -69,14 +69,16 @@ export default function MindsetLanding() {
           </div>
 
           <div className="relative">
-            <div className="aspect-video rounded-2xl bg-neutral-900/50 ring-1 ring-neutral-800 overflow-hidden">
-              <Image
-                src="/image.png"
-                alt="Interface Mindset - Alert Strategy"
-                fill
-                className="object-cover"
-                priority
-              />
+            <div className="rounded-2xl bg-neutral-900/50 ring-1 ring-neutral-800 p-4">
+              <div className="relative w-full h-[400px] md:h-[500px]">
+                <Image
+                  src="/image.png"
+                  alt="Interface Mindset - Alert Strategy"
+                  fill
+                  className="object-contain"
+                  priority
+                />
+              </div>
             </div>
             <div className="absolute -bottom-6 -left-6 hidden md:block h-20 w-20 rounded-2xl bg-amber-500/20 blur-2xl" />
           </div>
