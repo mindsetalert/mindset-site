@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useTranslation } from "../hooks/useTranslation";
@@ -6,6 +6,7 @@ import LanguageToggle from "../components/LanguageToggle";
 
 export default function MindsetLanding() {
   const { t } = useTranslation();
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   
   return (
     <div className="min-h-screen bg-neutral-950 text-neutral-100 selection:bg-amber-400/40">
@@ -38,9 +39,36 @@ export default function MindsetLanding() {
           </nav>
 
           <div className="flex items-center gap-3">
+            <button 
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)} 
+              className="md:hidden text-neutral-200 p-2"
+              aria-label="Menu"
+            >
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                {mobileMenuOpen ? (
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                ) : (
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                )}
+              </svg>
+            </button>
             <LanguageToggle />
           </div>
         </div>
+
+        {/* Menu Mobile */}
+        {mobileMenuOpen && (
+          <div className="md:hidden bg-neutral-900 border-t border-neutral-800">
+            <nav className="flex flex-col gap-4 p-4 text-sm">
+              <a href="#features" className="hover:text-amber-300 py-2" onClick={(e) => { e.preventDefault(); setMobileMenuOpen(false); const element = document.getElementById('features'); if (element) { const y = element.offsetTop - 100; window.scrollTo({ top: y, behavior: 'smooth' }); } }}>{t('nav.features')}</a>
+              <Link href="/software" className="hover:text-amber-300 py-2" onClick={() => setMobileMenuOpen(false)}>{t('nav.software')}</Link>
+              <a href="#how" className="hover:text-amber-300 py-2" onClick={(e) => { e.preventDefault(); setMobileMenuOpen(false); const element = document.getElementById('how'); if (element) { const y = element.offsetTop - 200; window.scrollTo({ top: y, behavior: 'smooth' }); } }}>{t('nav.how')}</a>
+              <a href="#pricing" className="hover:text-amber-300 py-2" onClick={(e) => { e.preventDefault(); setMobileMenuOpen(false); const element = document.getElementById('pricing'); if (element) { const y = element.offsetTop - 100; window.scrollTo({ top: y, behavior: 'smooth' }); } }}>{t('nav.pricing')}</a>
+              <a href="#faq" className="hover:text-amber-300 py-2" onClick={(e) => { e.preventDefault(); setMobileMenuOpen(false); const element = document.getElementById('faq'); if (element) { const y = element.offsetTop - 100; window.scrollTo({ top: y, behavior: 'smooth' }); } }}>{t('nav.faq')}</a>
+              <Link href="/contact" className="hover:text-amber-300 py-2" onClick={() => setMobileMenuOpen(false)}>{t('nav.contact')}</Link>
+            </nav>
+          </div>
+        )}
       </header>
 
       {/* Hero */}
