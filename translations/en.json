@@ -201,8 +201,8 @@
         "description": "Analyze your evolution with detailed performance charts. Track your progress, identify trends and optimize your trading strategy."
       },
       "dailyGoal": {
-        "title": "Daily Goal and Weekly Research",
-        "description": "Set your daily goals (Daily Goal) and weekly goals (Weekly Goal). Track your results and analyze your weekly statistics with the Weekly Research section. Stay disciplined and measure your progress week after week."
+        "title": "Weekly Goal and Research",
+        "description": "Set your weekly goals (Weekly Goal) and analyze your detailed statistics with the Weekly Research section. Summary table of your weeks with P&L, winning/losing days, win rate and trends. Stay disciplined and measure your progress week after week."
       },
       "monthlyGoal": {
         "title": "Monthly Goal",

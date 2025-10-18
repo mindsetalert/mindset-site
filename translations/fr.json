@@ -201,8 +201,8 @@
         "description": "Analysez votre évolution avec des graphiques détaillés de performance. Suivez votre progression, identifiez les tendances et optimisez votre stratégie de trading."
       },
       "dailyGoal": {
-        "title": "Objectif quotidien et recherche hebdomadaire",
-        "description": "Définissez vos objectifs quotidiens (Daily Goal) et hebdomadaires (Weekly Goal). Suivez vos résultats et analysez vos statistiques hebdomadaires avec la section Weekly Research. Restez discipliné et mesurez votre progression semaine après semaine."
+        "title": "Objectif hebdomadaire et recherche",
+        "description": "Définissez vos objectifs hebdomadaires (Weekly Goal) et analysez vos statistiques détaillées avec la section Weekly Research. Tableau récapitulatif de vos semaines avec P&L, jours gagnants/perdants, taux de réussite et tendances. Restez discipliné et mesurez votre progression semaine après semaine."
       },
       "monthlyGoal": {
         "title": "Objectif mensuel",
