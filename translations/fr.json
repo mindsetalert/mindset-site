@@ -152,6 +152,19 @@
     "buyPlan": "Acheter un forfait",
     "buyPlanSubtitle": "Choisissez le forfait qui vous convient"
   },
+  "register": {
+    "title": "Créer un compte",
+    "emailPlaceholder": "Email",
+    "passwordPlaceholder": "Mot de passe",
+    "creating": "Création…",
+    "createButton": "Créer le compte",
+    "alreadyHaveAccount": "Déjà un compte ?",
+    "login": "Se connecter",
+    "successTitle": "Compte créé avec succès !",
+    "verifyEmail": "Veuillez vérifier votre boîte email et cliquer sur le lien de validation que nous vous avons envoyé.",
+    "checkSpam": "Pensez à vérifier vos courriers indésirables si vous ne voyez pas l'email.",
+    "goToLogin": "Aller à la page de connexion"
+  },
   "contact": {
     "backToHome": "← Retour à l'accueil",
     "title": "Contactez-nous",

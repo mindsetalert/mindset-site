@@ -152,6 +152,19 @@
     "buyPlan": "Buy a Plan",
     "buyPlanSubtitle": "Choose the plan that suits you"
   },
+  "register": {
+    "title": "Create Account",
+    "emailPlaceholder": "Email",
+    "passwordPlaceholder": "Password",
+    "creating": "Creating…",
+    "createButton": "Create Account",
+    "alreadyHaveAccount": "Already have an account?",
+    "login": "Sign in",
+    "successTitle": "Account created successfully!",
+    "verifyEmail": "Please check your email inbox and click on the validation link we sent you.",
+    "checkSpam": "Remember to check your spam folder if you don't see the email.",
+    "goToLogin": "Go to login page"
+  },
   "contact": {
     "backToHome": "← Back to home",
     "title": "Contact Us",
