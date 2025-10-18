@@ -165,6 +165,23 @@
     "checkSpam": "Remember to check your spam folder if you don't see the email.",
     "goToLogin": "Go to login page"
   },
+  "login": {
+    "title": "Login",
+    "emailPlaceholder": "Email",
+    "passwordPlaceholder": "Password",
+    "connecting": "Connecting…",
+    "loginButton": "Sign in",
+    "forgotPassword": "Forgot password?",
+    "noAccount": "No account?",
+    "createAccount": "Create account"
+  },
+  "errors": {
+    "emailNotConfirmed": "Email not confirmed. Please check your email inbox and click on the validation link.",
+    "invalidCredentials": "Invalid email or password.",
+    "userAlreadyExists": "An account already exists with this email.",
+    "weakPassword": "Password must be at least 6 characters.",
+    "invalidEmail": "Invalid email address."
+  },
   "contact": {
     "backToHome": "← Back to home",
     "title": "Contact Us",

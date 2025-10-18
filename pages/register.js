@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { supabase } from '../lib/supabase';
 import { useTranslation } from '../hooks/useTranslation';
+import { translateError } from '../lib/translateError';
 
 export default function RegisterPage() {
   const { t } = useTranslation();
@@ -17,7 +18,7 @@ export default function RegisterPage() {
     setLoading(true);
     const { error } = await supabase.auth.signUp({ email, password });
     setLoading(false);
-    if (error) setError(error.message);
+    if (error) setError(translateError(error.message, t));
     else setSuccess(true);
   };
 

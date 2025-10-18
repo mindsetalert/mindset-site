@@ -165,6 +165,23 @@
     "checkSpam": "Pensez à vérifier vos courriers indésirables si vous ne voyez pas le courriel.",
     "goToLogin": "Aller à la page de connexion"
   },
+  "login": {
+    "title": "Connexion",
+    "emailPlaceholder": "Courriel",
+    "passwordPlaceholder": "Mot de passe",
+    "connecting": "Connexion…",
+    "loginButton": "Se connecter",
+    "forgotPassword": "Mot de passe oublié ?",
+    "noAccount": "Pas de compte ?",
+    "createAccount": "Créer un compte"
+  },
+  "errors": {
+    "emailNotConfirmed": "Courriel non confirmé. Veuillez vérifier votre boîte de courriel et cliquer sur le lien de validation.",
+    "invalidCredentials": "Courriel ou mot de passe incorrect.",
+    "userAlreadyExists": "Un compte existe déjà avec ce courriel.",
+    "weakPassword": "Le mot de passe doit contenir au moins 6 caractères.",
+    "invalidEmail": "Adresse courriel invalide."
+  },
   "contact": {
     "backToHome": "← Retour à l'accueil",
     "title": "Contactez-nous",
