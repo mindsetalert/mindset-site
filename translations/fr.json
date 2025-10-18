@@ -202,7 +202,7 @@
       },
       "dailyGoal": {
         "title": "Objectif quotidien et recherche hebdomadaire",
-        "description": "Définissez vos objectifs quotidiens et suivez vos résultats hebdomadaires. Restez discipliné et mesurez votre progression semaine après semaine."
+        "description": "Définissez vos objectifs quotidiens (Daily Goal) et hebdomadaires (Weekly Goal). Suivez vos résultats et analysez vos statistiques hebdomadaires avec la section Weekly Research. Restez discipliné et mesurez votre progression semaine après semaine."
       },
       "monthlyGoal": {
         "title": "Objectif mensuel",
