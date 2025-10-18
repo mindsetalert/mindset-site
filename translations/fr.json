@@ -80,7 +80,7 @@
       "title": "Mensuel",
       "description": "1 poste · Renouvelé chaque mois",
       "price": "$29.99",
-      "period": "CAD /mois",
+      "period": "USD /mois",
       "features": [
         "✔ Licence par machine",
         "✔ Mises à jour incluses",
@@ -93,7 +93,7 @@
       "title": "Annuel",
       "description": "1 poste · Facturation annuelle",
       "price": "$323.90",
-      "period": "CAD /an",
+      "period": "USD /an",
       "features": [
         "✔ Licence par machine",
         "✔ Mises à jour incluses",

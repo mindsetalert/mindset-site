@@ -80,7 +80,7 @@
       "title": "Monthly",
       "description": "1 workstation · Renewed monthly",
       "price": "$29.99",
-      "period": "CAD /month",
+      "period": "USD /month",
       "features": [
         "✔ Per-machine license",
         "✔ Updates included",
@@ -93,7 +93,7 @@
       "title": "Yearly",
       "description": "1 workstation · Annual billing",
       "price": "$323.90",
-      "period": "CAD /year",
+      "period": "USD /year",
       "features": [
         "✔ Per-machine license",
         "✔ Updates included",

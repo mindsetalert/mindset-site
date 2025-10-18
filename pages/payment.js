@@ -84,7 +84,7 @@ export default function PaymentPage() {
                 <p className="text-sm text-neutral-300 mb-4">{plan.description}</p>
                 
                 <div className="text-3xl font-bold text-amber-400 mb-4">
-                  ${plan.price} <span className="text-base font-normal text-neutral-400">CAD /{plan.interval === 'month' ? 'mois' : 'an'}</span>
+                  ${plan.price} <span className="text-base font-normal text-neutral-400">USD /{plan.interval === 'month' ? 'mois' : 'an'}</span>
                 </div>
                 
                 <ul className="space-y-2 text-sm text-neutral-300">
