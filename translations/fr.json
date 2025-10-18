@@ -15,7 +15,8 @@
     "faq": "FAQ",
     "buy": "Acheter",
     "download": "Télécharger",
-    "contact": "Contacter"
+    "contact": "Contacter",
+    "software": "Logiciel"
   },
   "hero": {
     "title": "Gardez le contrôle de votre",
@@ -181,6 +182,33 @@
     "userAlreadyExists": "Un compte existe déjà avec ce courriel.",
     "weakPassword": "Le mot de passe doit contenir au moins 6 caractères.",
     "invalidEmail": "Adresse courriel invalide."
+  },
+  "software": {
+    "title": "Aperçu du logiciel",
+    "subtitle": "Découvrez les fonctionnalités de Mindset Alert Strategy",
+    "backToHome": "← Retour à l'accueil",
+    "screenshots": {
+      "alertWindow": {
+        "title": "Fenêtre d'alerte principale",
+        "description": "Interface principale avec surveillance en temps réel de votre P&L. Configurez vos limites de risque (Max Loss, Drawdown, Daily Goal) et recevez des alertes vocales instantanées quand vous franchissez vos seuils."
+      },
+      "statsCalendar": {
+        "title": "Calendrier de statistiques",
+        "description": "Suivez vos performances jour après jour avec le calendrier mensuel. Visualisez rapidement vos sessions gagnantes et perdantes, identifiez vos meilleurs jours de trading."
+      },
+      "statsChart": {
+        "title": "Graphiques de statistiques",
+        "description": "Analysez votre évolution avec des graphiques détaillés de performance. Suivez votre progression, identifiez les tendances et optimisez votre stratégie de trading."
+      },
+      "dailyGoal": {
+        "title": "Objectif quotidien et recherche hebdomadaire",
+        "description": "Définissez vos objectifs quotidiens et suivez vos résultats hebdomadaires. Restez discipliné et mesurez votre progression semaine après semaine."
+      },
+      "monthlyGoal": {
+        "title": "Objectif mensuel",
+        "description": "Fixez vos objectifs mensuels et suivez votre performance globale. Gardez le cap sur vos objectifs à long terme et célébrez vos réussites."
+      }
+    }
   },
   "contact": {
     "backToHome": "← Retour à l'accueil",

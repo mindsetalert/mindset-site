@@ -15,7 +15,8 @@
     "faq": "FAQ",
     "buy": "Buy",
     "download": "Download",
-    "contact": "Contact"
+    "contact": "Contact",
+    "software": "Software"
   },
   "hero": {
     "title": "Keep control of your",
@@ -181,6 +182,33 @@
     "userAlreadyExists": "An account already exists with this email.",
     "weakPassword": "Password must be at least 6 characters.",
     "invalidEmail": "Invalid email address."
+  },
+  "software": {
+    "title": "Software Overview",
+    "subtitle": "Discover the features of Mindset Alert Strategy",
+    "backToHome": "← Back to home",
+    "screenshots": {
+      "alertWindow": {
+        "title": "Main Alert Window",
+        "description": "Main interface with real-time P&L monitoring. Configure your risk limits (Max Loss, Drawdown, Daily Goal) and receive instant voice alerts when you breach your thresholds."
+      },
+      "statsCalendar": {
+        "title": "Statistics Calendar",
+        "description": "Track your performance day by day with the monthly calendar. Quickly visualize your winning and losing sessions, identify your best trading days."
+      },
+      "statsChart": {
+        "title": "Statistics Charts",
+        "description": "Analyze your evolution with detailed performance charts. Track your progress, identify trends and optimize your trading strategy."
+      },
+      "dailyGoal": {
+        "title": "Daily Goal and Weekly Research",
+        "description": "Set your daily goals and track your weekly results. Stay disciplined and measure your progress week after week."
+      },
+      "monthlyGoal": {
+        "title": "Monthly Goal",
+        "description": "Set your monthly goals and track your overall performance. Stay focused on your long-term objectives and celebrate your achievements."
+      }
+    }
   },
   "contact": {
     "backToHome": "← Back to home",
