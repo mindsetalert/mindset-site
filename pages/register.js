@@ -29,7 +29,7 @@ export default function RegisterPage() {
         {success ? (
           <div className="space-y-6">
             <div className="rounded-xl bg-green-900/30 border border-green-700 p-6">
-              <div className="text-red-500 font-bold text-lg mb-3">
+              <div className="text-red-600 font-extrabold text-xl mb-3 uppercase">
                 IMPORTANT!
               </div>
               <h2 className="text-xl font-semibold text-green-300 mb-3">
