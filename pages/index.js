@@ -17,7 +17,7 @@ export default function MindsetLanding() {
             {/* Logo très grand */}
             <div className="relative h-40 w-[10rem]">
               <Image
-                src="/logo.png"  // Mets ton logo dans /public/logo.png
+                src="/logo-new.png"
                 alt="Logo Mindset – Alert Strategy"
                 fill
                 className="object-contain"
