@@ -12,7 +12,7 @@ export default function MindsetLanding() {
     <div className="min-h-screen bg-neutral-950 text-neutral-100 selection:bg-amber-400/40">
       {/* Nav */}
       <header className="sticky top-0 z-30 backdrop-blur supports-[backdrop-filter]:bg-neutral-950/60">
-        <div className="mx-auto max-w-6xl px-4 py-4 flex items-center justify-between translate-x-2.5 md:-translate-x-[200px]">
+        <div className="mx-auto max-w-6xl px-4 py-4 flex items-center justify-between md:-translate-x-[200px]">
           <div className="flex items-center">
             {/* Logo responsive - moyen sur mobile, énorme sur desktop */}
             <div className="relative h-24 w-64 md:h-48 md:w-[45rem]">
