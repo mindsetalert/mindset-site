@@ -14,8 +14,8 @@ export default function MindsetLanding() {
       <header className="sticky top-0 z-30 backdrop-blur supports-[backdrop-filter]:bg-neutral-950/60">
         <div className="mx-auto max-w-6xl px-4 py-4 flex items-center justify-between">
           <div className="flex items-center">
-            {/* Logo responsive - petit sur mobile, très grand sur desktop */}
-            <div className="relative h-20 w-48 md:h-40 md:w-[32rem]">
+            {/* Logo responsive - petit sur mobile, énorme sur desktop */}
+            <div className="relative h-20 w-48 md:h-48 md:w-[45rem]">
               <Image
                 src="/logo-new.png"
                 alt="Logo Mindset – Alert Strategy"
