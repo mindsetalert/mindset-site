@@ -13,9 +13,9 @@ export default function MindsetLanding() {
       {/* Nav */}
       <header className="sticky top-0 z-30 backdrop-blur supports-[backdrop-filter]:bg-neutral-950/60">
         <div className="mx-auto max-w-6xl px-4 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-4">
-            {/* Logo très grand */}
-            <div className="relative h-40 w-[10rem]">
+          <div className="flex items-center">
+            {/* Logo beaucoup plus grand */}
+            <div className="relative h-32 w-80">
               <Image
                 src="/logo-new.png"
                 alt="Logo Mindset – Alert Strategy"
@@ -23,9 +23,6 @@ export default function MindsetLanding() {
                 className="object-contain"
                 priority
               />
-            </div>
-            <div className="text-xl font-bold tracking-wider text-neutral-200">
-              Mindset – Alert Strategy
             </div>
           </div>
 
