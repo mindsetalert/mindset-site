@@ -51,6 +51,7 @@ export default function MindsetLanding() {
               </svg>
             </button>
             <LanguageToggle />
+            </div>
           </div>
         </div>
 
