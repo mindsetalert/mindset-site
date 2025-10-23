@@ -128,7 +128,10 @@ export default function AccountPage() {
                     </div>
                     <div className="flex items-center gap-2">
                       {token ? (
-                        <a href={`/api/download?token=${encodeURIComponent(token.token)}`} className="px-3 py-2 rounded bg-amber-500 text-black font-semibold hover:bg-amber-400">{t('account.downloadSoftwareWithVersion')}</a>
+                        <div className="flex flex-col items-end">
+                          <a href={`/api/download?token=${encodeURIComponent(token.token)}`} className="px-3 py-2 rounded bg-amber-500 text-black font-semibold hover:bg-amber-400">{t('account.downloadSoftware')}</a>
+                          <div className="text-xs text-neutral-500 mt-1">{t('account.softwareVersion')}</div>
+                        </div>
                       ) : (
                         <button onClick={() => handleCreateDownload(license.id)} className="px-3 py-2 rounded bg-amber-500 text-black font-semibold hover:bg-amber-400">{t('account.generateLink')}</button>
                       )}
