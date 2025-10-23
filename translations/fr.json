@@ -149,6 +149,7 @@
     "status": "Statut",
     "expires": "Expire",
     "downloadSoftware": "Télécharger le logiciel",
+    "downloadSoftwareWithVersion": "Télécharger le logiciel (dernière version 1.0.2 - 2025/10/23)",
     "generateLink": "Générer lien",
     "buyPlan": "Acheter un forfait",
     "buyPlanSubtitle": "Choisissez le forfait qui vous convient"
