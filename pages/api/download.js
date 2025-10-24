@@ -63,7 +63,7 @@ export default async function handler(req, res) {
     }
 
     // GitHub Release URL (private repo)
-    const releaseUrl = `https://api.github.com/repos/mindsetalert/mindset-downloads/releases/tags/v1.0.1`;
+    const releaseUrl = `https://api.github.com/repos/mindsetalert/mindset-downloads/releases/tags/v1.0.2`;
     
     try {
       // Fetch release info
