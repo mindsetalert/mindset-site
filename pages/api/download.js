@@ -55,7 +55,7 @@ export default async function handler(req, res) {
       .eq('id', row.id);
 
     // Redirect to GitHub Private Release download URL
-    const fileName = row.file_key || 'MindsetTrading_Setup.exe';
+    const fileName = row.file_key || 'MindsetTrading_v1.0.2_Setup.exe';
     const githubToken = process.env.GITHUB_TOKEN;
     
     if (!githubToken) {
@@ -80,7 +80,14 @@ export default async function handler(req, res) {
       }
       
       const releaseData = await releaseResponse.json();
-      const asset = releaseData.assets.find(a => a.name === fileName);
+      
+      // Chercher le fichier .exe dans les assets (peu importe le nom exact)
+      let asset = releaseData.assets.find(a => a.name === fileName);
+      
+      // Si pas trouvé avec le nom exact, chercher n'importe quel fichier .exe
+      if (!asset) {
+        asset = releaseData.assets.find(a => a.name.endsWith('.exe'));
+      }
       
       if (!asset) {
         return res.status(404).json({ error: 'File not found in release' });
