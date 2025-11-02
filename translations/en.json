@@ -254,6 +254,6 @@
       "osTitle": "Supported operating systems",
       "osText": "Windows 10/11 (64-bit).",
       "currentSupportTitle": "Compatible brokers",
-      "currentSupportText": "IQ Edge and TradingView"
+      "currentSupportText": "Questrade, IQ Edge and TradingView"
     }
 }
