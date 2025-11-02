@@ -28,7 +28,7 @@ export default function MindsetLanding() {
 
           <div className="flex items-center gap-8">
             <div className="hidden md:flex flex-col items-end">
-              <div className="mb-2">
+              <div className="mb-4">
                 <LanguageToggle />
               </div>
               <nav className="flex items-center gap-6 text-sm">
@@ -56,7 +56,6 @@ export default function MindsetLanding() {
                 )}
               </svg>
             </button>
-            <LanguageToggle />
             </div>
           </div>
         </div>
