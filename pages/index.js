@@ -27,17 +27,22 @@ export default function MindsetLanding() {
           </div>
 
           <div className="flex items-center gap-8">
-            <nav className="hidden md:flex items-center gap-6 text-sm">
-              <a href="#features" className="hover:text-amber-300" onClick={(e) => { e.preventDefault(); const element = document.getElementById('features'); if (element) { const y = element.offsetTop - 100; window.scrollTo({ top: y, behavior: 'smooth' }); } }}>{t('nav.features')}</a>
-              <Link href="/software" className="hover:text-amber-300">{t('nav.software')}</Link>
-              <a href="#how" className="hover:text-amber-300" onClick={(e) => { e.preventDefault(); const element = document.getElementById('how'); if (element) { const y = element.offsetTop - 200; window.scrollTo({ top: y, behavior: 'smooth' }); } }}>{t('nav.how')}</a>
-              <a href="#pricing" className="hover:text-amber-300" onClick={(e) => { e.preventDefault(); const element = document.getElementById('pricing'); if (element) { const y = element.offsetTop - 100; window.scrollTo({ top: y, behavior: 'smooth' }); } }}>{t('nav.pricing')}</a>
-              <a href="#faq" className="hover:text-amber-300" onClick={(e) => { e.preventDefault(); const element = document.getElementById('faq'); if (element) { const y = element.offsetTop - 100; window.scrollTo({ top: y, behavior: 'smooth' }); } }}>{t('nav.faq')}</a>
-              <a href="#compatibility" className="hover:text-amber-300" onClick={(e) => { e.preventDefault(); const element = document.getElementById('compatibility'); if (element) { const y = element.offsetTop - 100; window.scrollTo({ top: y, behavior: 'smooth' }); } }}>{t('nav.compatibility')}</a>
-            </nav>
+            <div className="hidden md:flex flex-col items-end">
+              <div className="mb-2">
+                <LanguageToggle />
+              </div>
+              <nav className="flex items-center gap-6 text-sm">
+                <a href="#features" className="hover:text-amber-300" onClick={(e) => { e.preventDefault(); const element = document.getElementById('features'); if (element) { const y = element.offsetTop - 100; window.scrollTo({ top: y, behavior: 'smooth' }); } }}>{t('nav.features')}</a>
+                <Link href="/software" className="hover:text-amber-300">{t('nav.software')}</Link>
+                <a href="#how" className="hover:text-amber-300" onClick={(e) => { e.preventDefault(); const element = document.getElementById('how'); if (element) { const y = element.offsetTop - 200; window.scrollTo({ top: y, behavior: 'smooth' }); } }}>{t('nav.how')}</a>
+                <a href="#pricing" className="hover:text-amber-300" onClick={(e) => { e.preventDefault(); const element = document.getElementById('pricing'); if (element) { const y = element.offsetTop - 100; window.scrollTo({ top: y, behavior: 'smooth' }); } }}>{t('nav.pricing')}</a>
+                <a href="#faq" className="hover:text-amber-300" onClick={(e) => { e.preventDefault(); const element = document.getElementById('faq'); if (element) { const y = element.offsetTop - 100; window.scrollTo({ top: y, behavior: 'smooth' }); } }}>{t('nav.faq')}</a>
+                <a href="#compatibility" className="hover:text-amber-300" onClick={(e) => { e.preventDefault(); const element = document.getElementById('compatibility'); if (element) { const y = element.offsetTop - 100; window.scrollTo({ top: y, behavior: 'smooth' }); } }}>{t('nav.compatibility')}</a>
+                <Link href="/contact" className="hover:text-amber-300">{t('nav.contact')}</Link>
+              </nav>
+            </div>
 
             <div className="flex items-center gap-3 ml-4">
-            <LanguageToggle />
             <button 
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)} 
               className="md:hidden text-neutral-200 p-2"
@@ -51,7 +56,7 @@ export default function MindsetLanding() {
                 )}
               </svg>
             </button>
-            <Link href="/contact" className="hidden md:block hover:text-amber-300">{t('nav.contact')}</Link>
+            <LanguageToggle />
             </div>
           </div>
         </div>
