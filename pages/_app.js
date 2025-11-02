@@ -6,8 +6,8 @@ import HeaderAuth from "../components/HeaderAuth";
 export default function App({ Component, pageProps }) {
   return (
     <LanguageProvider>
-      <SiteHeader />
       <HeaderAuth />
+      <SiteHeader />
       <Component {...pageProps} />
     </LanguageProvider>
   );
