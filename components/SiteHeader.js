@@ -9,7 +9,7 @@ export default function SiteHeader() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-30 text-neutral-100 bg-transparent">
+    <header className="sticky top-0 z-30 text-neutral-100 bg-gradient-to-b from-neutral-950 to-transparent">
       <div className="mx-auto max-w-6xl px-4 py-4 flex items-center justify-between -translate-x-[60px] md:-translate-x-[200px]">
         <div className="flex items-center">
           <div className="relative h-24 w-64 md:h-48 md:w-[45rem]">
