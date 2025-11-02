@@ -121,6 +121,36 @@ export default function PaymentPage() {
             Pour finaliser le paiement, veuillez vous connecter: <Link className="text-amber-400" href="/login?next=/payment">Se connecter</Link> ou <Link className="text-amber-400" href="/register?next=/payment">Créer un compte</Link>.
           </div>
         )}
+
+        {/* Vidéo explicative */}
+        <div className="mt-10">
+          <h2 className="text-xl font-semibold mb-1">{t('videos.title')}</h2>
+          <div className="text-sm text-neutral-400 mb-4">{t('videos.pnlCaption')}</div>
+          <div className="rounded-xl overflow-hidden border border-neutral-800 bg-neutral-900/40">
+            <div className="relative w-full" style={{ paddingTop: '56.25%' }}>
+              <iframe
+                className="absolute inset-0 w-full h-full"
+                src="https://www.youtube-nocookie.com/embed/gF5pcxdKwLc"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              />
+            </div>
+          </div>
+        </div>
+
+        {/* Compatibilité sous les forfaits */}
+        <div className="mt-10 grid md:grid-cols-2 gap-6">
+          <div className="rounded-2xl border border-neutral-800 bg-neutral-900/40 p-5">
+            <div className="font-semibold">{t('compatibility.osTitle')}</div>
+            <div className="mt-2 text-neutral-300 text-sm">{t('compatibility.osText')}</div>
+          </div>
+          <div className="rounded-2xl border border-neutral-800 bg-neutral-900/40 p-5">
+            <div className="font-semibold">{t('compatibility.currentSupportTitle')}</div>
+            <div className="mt-2 text-neutral-300 text-sm">{t('compatibility.currentSupportText')}</div>
+          </div>
+        </div>
       </div>
     </div>
   );
