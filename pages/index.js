@@ -210,6 +210,7 @@ export default function MindsetLanding() {
           <h3 className="text-sm font-semibold text-neutral-200">{t('legal.disclaimerTitle')}</h3>
           <p className="mt-2 text-xs text-neutral-400">{t('legal.disclaimerText1')}</p>
           <p className="mt-2 text-xs text-neutral-400">{t('legal.disclaimerText2')}</p>
+          <p className="mt-2 text-xs text-neutral-300 font-semibold">{t('legal.nonAffiliationEmphasis')}</p>
 
           <h3 className="mt-6 text-sm font-semibold text-neutral-200">{t('legal.compatibilityTitle')}</h3>
           <p className="mt-2 text-xs text-neutral-400">{t('legal.compatibilityText')}</p>
