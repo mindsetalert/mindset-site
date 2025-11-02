@@ -143,24 +143,6 @@ export default function AccountPage() {
           )}
         </div>
 
-        {/* Vidéo explicative */}
-        <div className="mt-12">
-          <h2 className="text-xl font-semibold mb-1">{t('videos.title')}</h2>
-          <div className="text-sm text-neutral-400 mb-4">{t('videos.pnlCaption')}</div>
-          <div className="rounded-xl overflow-hidden border border-neutral-800 bg-neutral-900/40">
-            <div className="relative w-full" style={{ paddingTop: '56.25%' }}>
-              <iframe
-                className="absolute inset-0 w-full h-full"
-                src="https://www.youtube-nocookie.com/embed/gF5pcxdKwLc"
-                title="YouTube video player"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-              />
-            </div>
-          </div>
-        </div>
-
         {/* Section Acheter un forfait */}
         <div className="mt-12">
           <h2 className="text-xl font-semibold mb-2">{t('account.buyPlan')}</h2>
@@ -204,6 +186,35 @@ export default function AccountPage() {
                 {t('pricing.yearly.button')}
               </Link>
               <p className="mt-2 text-xs text-neutral-400">{t('pricing.yearly.note')}</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Compatibilité et Vidéo (sous les forfaits) */}
+        <div className="mt-10 grid md:grid-cols-2 gap-6">
+          <div className="rounded-2xl border border-neutral-800 bg-neutral-900/40 p-5">
+            <div className="font-semibold">{t('compatibility.osTitle')}</div>
+            <div className="mt-2 text-neutral-300 text-sm">{t('compatibility.osText')}</div>
+          </div>
+          <div className="rounded-2xl border border-neutral-800 bg-neutral-900/40 p-5">
+            <div className="font-semibold">{t('compatibility.currentSupportTitle')}</div>
+            <div className="mt-2 text-neutral-300 text-sm">{t('compatibility.currentSupportText')}</div>
+          </div>
+        </div>
+
+        <div className="mt-10">
+          <h2 className="text-xl font-semibold mb-1">{t('videos.title')}</h2>
+          <div className="text-sm text-neutral-400 mb-4">{t('videos.pnlCaption')}</div>
+          <div className="rounded-xl overflow-hidden border border-neutral-800 bg-neutral-900/40">
+            <div className="relative w-full" style={{ paddingTop: '56.25%' }}>
+              <iframe
+                className="absolute inset-0 w-full h-full"
+                src="https://www.youtube-nocookie.com/embed/gF5pcxdKwLc"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              />
             </div>
           </div>
         </div>
