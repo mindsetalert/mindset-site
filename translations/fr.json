@@ -236,5 +236,11 @@
     "nonAffiliationEmphasis": "Important : Mindset – Alert Strategy est totalement indépendant et n’est affilié, approuvé, parrainé ni partenaire d’aucune plateforme, courtier, bourse ou fournisseur tiers.",
     "compatibilityTitle": "Compatibilité des plateformes",
     "compatibilityText": "Le logiciel fonctionne par capture et lecture (OCR) d'une zone de votre écran. La compatibilité dépend de l'application affichée, de sa version, de vos réglages (thème, police, zoom, langue), de la résolution et des performances de votre machine. Aucune compatibilité avec une application, un courtier ou une plateforme précise n'est affirmée ni garantie. Veuillez effectuer vos essais sur votre propre configuration et contacter le support pour toute question ou demande d'ajout. Nous travaillons activement à optimiser la lecture du P&L via des configurations adaptées (profil par courtier/plateforme). La sélection de courtiers supportés sera élargie au fil du temps; contactez le support pour prioriser votre plateforme."
+  },
+  "compatibility": {
+    "osTitle": "Systèmes d'exploitation pris en charge",
+    "osText": "Windows 10/11 (64-bit).",
+    "currentSupportTitle": "Compatibilités actuellement testées",
+    "currentSupportText": "Lecture du P&L sur IQ Edge: Close P&L et Realized P&L. Intégration en amélioration continue; le résultat peut varier selon vos réglages (thème, police, zoom, langue)."
   }
 }

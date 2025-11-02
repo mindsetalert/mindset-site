@@ -216,6 +216,14 @@ export default function MindsetLanding() {
 
           <h3 className="mt-6 text-sm font-semibold text-neutral-200">{t('legal.compatibilityTitle')}</h3>
           <p className="mt-2 text-xs text-neutral-400">{t('legal.compatibilityText')}</p>
+
+          <div className="mt-6">
+            <h4 className="text-sm font-semibold text-neutral-200">{t('compatibility.osTitle')}</h4>
+            <p className="mt-2 text-xs text-neutral-400">{t('compatibility.osText')}</p>
+
+            <h4 className="mt-4 text-sm font-semibold text-neutral-200">{t('compatibility.currentSupportTitle')}</h4>
+            <p className="mt-2 text-xs text-neutral-400">{t('compatibility.currentSupportText')}</p>
+          </div>
         </div>
       </section>
 
