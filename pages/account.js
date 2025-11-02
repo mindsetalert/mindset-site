@@ -143,6 +143,13 @@ export default function AccountPage() {
           )}
         </div>
 
+        {/* Compatibilité - mise en évidence sous les licences */}
+        <div className="mt-6 rounded-2xl border-2 border-red-500 bg-red-500/10 p-5">
+          <h3 className="text-lg font-semibold text-red-400">{t('compatibility.currentSupportTitle')}</h3>
+          <p className="mt-2 text-sm text-neutral-200">{t('compatibility.currentSupportText')}</p>
+          <div className="mt-3 text-xs text-neutral-300">{t('compatibility.osTitle')}: {t('compatibility.osText')}</div>
+        </div>
+
         {/* Section Acheter un forfait */}
         <div className="mt-12">
           <h2 className="text-xl font-semibold mb-2">{t('account.buyPlan')}</h2>
