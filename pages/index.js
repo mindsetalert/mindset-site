@@ -119,14 +119,6 @@ export default function MindsetLanding() {
         </div>
       </section>
 
-      {/* Social proof */}
-      <section className="border-y border-neutral-800 bg-neutral-950/60">
-        <div className="mx-auto max-w-6xl px-4 py-8 grid md:grid-cols-2 gap-6 text-sm text-neutral-300">
-          <div className="rounded-xl p-4 bg-neutral-900/40">{t('socialProof.voiceAlerts')}</div>
-          <div className="rounded-xl p-4 bg-neutral-900/40">{t('socialProof.ocrMultiBroker')}</div>
-        </div>
-      </section>
-
       {/* Features */}
       <section id="features" className="mx-auto max-w-6xl px-4 py-16">
         <div className="grid md:grid-cols-3 gap-6">
