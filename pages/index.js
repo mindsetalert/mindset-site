@@ -204,6 +204,18 @@ export default function MindsetLanding() {
         </div>
       </section>
 
+      {/* Mentions légales & compatibilité */}
+      <section className="border-t border-neutral-800 bg-neutral-950/40">
+        <div className="mx-auto max-w-6xl px-4 py-10">
+          <h3 className="text-sm font-semibold text-neutral-200">{t('legal.disclaimerTitle')}</h3>
+          <p className="mt-2 text-xs text-neutral-400">{t('legal.disclaimerText1')}</p>
+          <p className="mt-2 text-xs text-neutral-400">{t('legal.disclaimerText2')}</p>
+
+          <h3 className="mt-6 text-sm font-semibold text-neutral-200">{t('legal.compatibilityTitle')}</h3>
+          <p className="mt-2 text-xs text-neutral-400">{t('legal.compatibilityText')}</p>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="border-t border-neutral-800">
         <div className="mx-auto max-w-6xl px-4 py-10 text-sm text-neutral-400">

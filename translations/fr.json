@@ -227,5 +227,12 @@
     "sending": "Envoi en cours...",
     "success": "Message envoyé avec succès ! Nous vous répondrons bientôt.",
     "error": "Erreur lors de l'envoi. Veuillez réessayer."
+  },
+  "legal": {
+    "disclaimerTitle": "Mentions légales et avertissement",
+    "disclaimerText1": "Mindset – Alert Strategy est un outil d'assistance et d'éducation. Il ne fournit aucun conseil financier, ni recommandation d'investissement. Le trading comporte des risques importants de perte. Vous êtes seul responsable de vos décisions, de vos réglages et de l'utilisation du logiciel. Les auteurs et éditeurs ne peuvent être tenus responsables d'aucune perte directe ou indirecte liée à l'utilisation de cette application ou aux contenus (vidéos, guides).",
+    "disclaimerText2": "Les marques, logos et noms de plateformes mentionnés sont la propriété de leurs détenteurs respectifs. Mindset – Alert Strategy n'est affilié, sponsorisé ou approuvé par aucun courtier ni aucune plateforme tierce.",
+    "compatibilityTitle": "Compatibilité plateformes",
+    "compatibilityText": "Compatibilité et démonstrations prévues notamment avec : DAS Trader Pro, IQEdge, TradingView, etc. Selon vos réglages, la compatibilité peut varier et n'est pas garantie. Effectuez vos essais sur votre configuration et contactez le support pour toute autre plateforme."
   }
 }
