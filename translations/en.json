@@ -26,6 +26,7 @@
     "download": "Download",
     "contact": "Contact",
     "software": "Software",
+    "legal": "Legal",
     "compatibility": "Compatibility"
   },
   "hero": {
@@ -107,9 +108,7 @@
       "period": "USD /year",
       "features": [
         "✔ Per-machine license",
-        "✔ Updates included",
-        "✔ Priority support",
-        "✔ Beta access"
+        "✔ Updates included"
       ],
       "button": "Buy Yearly",
       "note": "One-time billing, annual renewal.",

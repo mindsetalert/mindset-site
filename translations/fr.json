@@ -26,6 +26,7 @@
     "download": "Télécharger",
     "contact": "Contacter",
     "software": "Logiciel",
+    "legal": "Mentions légales",
     "compatibility": "Compatibilité"
   },
   "hero": {
@@ -107,9 +108,7 @@
       "period": "USD /an",
       "features": [
         "✔ Licence par machine",
-        "✔ Mises à jour incluses",
-        "✔ Support prioritaire",
-        "✔ Accès bêta"
+        "✔ Mises à jour incluses"
       ],
       "button": "Acheter Annuel",
       "note": "Facturation unique, renouvellement annuel.",

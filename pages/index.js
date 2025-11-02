@@ -38,6 +38,7 @@ export default function MindsetLanding() {
                 <a href="#pricing" className="hover:text-amber-300" onClick={(e) => { e.preventDefault(); const element = document.getElementById('pricing'); if (element) { const y = element.offsetTop - 100; window.scrollTo({ top: y, behavior: 'smooth' }); } }}>{t('nav.pricing')}</a>
                 <a href="#faq" className="hover:text-amber-300" onClick={(e) => { e.preventDefault(); const element = document.getElementById('faq'); if (element) { const y = element.offsetTop - 100; window.scrollTo({ top: y, behavior: 'smooth' }); } }}>{t('nav.faq')}</a>
                 <a href="#compatibility" className="hover:text-amber-300" onClick={(e) => { e.preventDefault(); const element = document.getElementById('compatibility'); if (element) { const y = element.offsetTop - 100; window.scrollTo({ top: y, behavior: 'smooth' }); } }}>{t('nav.compatibility')}</a>
+                <a href="#legal" className="hover:text-amber-300" onClick={(e) => { e.preventDefault(); const element = document.getElementById('legal'); if (element) { const y = element.offsetTop - 100; window.scrollTo({ top: y, behavior: 'smooth' }); } }}>{t('nav.legal')}</a>
                 <Link href="/contact" className="hover:text-amber-300">{t('nav.contact')}</Link>
               </nav>
             </div>
@@ -70,6 +71,7 @@ export default function MindsetLanding() {
               <a href="#pricing" className="hover:text-amber-300 py-2" onClick={(e) => { e.preventDefault(); setMobileMenuOpen(false); const element = document.getElementById('pricing'); if (element) { const y = element.offsetTop - 100; window.scrollTo({ top: y, behavior: 'smooth' }); } }}>{t('nav.pricing')}</a>
               <a href="#faq" className="hover:text-amber-300 py-2" onClick={(e) => { e.preventDefault(); setMobileMenuOpen(false); const element = document.getElementById('faq'); if (element) { const y = element.offsetTop - 100; window.scrollTo({ top: y, behavior: 'smooth' }); } }}>{t('nav.faq')}</a>
               <a href="#compatibility" className="hover:text-amber-300 py-2" onClick={(e) => { e.preventDefault(); setMobileMenuOpen(false); const element = document.getElementById('compatibility'); if (element) { const y = element.offsetTop - 100; window.scrollTo({ top: y, behavior: 'smooth' }); } }}>{t('nav.compatibility')}</a>
+              <a href="#legal" className="hover:text-amber-300 py-2" onClick={(e) => { e.preventDefault(); setMobileMenuOpen(false); const element = document.getElementById('legal'); if (element) { const y = element.offsetTop - 100; window.scrollTo({ top: y, behavior: 'smooth' }); } }}>{t('nav.legal')}</a>
               <Link href="/contact" className="hover:text-amber-300 py-2" onClick={() => setMobileMenuOpen(false)}>{t('nav.contact')}</Link>
             </nav>
           </div>
@@ -211,6 +213,7 @@ export default function MindsetLanding() {
       {/* Mentions légales & compatibilité */}
       <section id="compatibility" className="border-t border-neutral-800 bg-neutral-950/40">
         <div className="mx-auto max-w-6xl px-4 py-10">
+          <div id="legal" />
           <h3 className="text-sm font-semibold text-neutral-200">{t('legal.disclaimerTitle')}</h3>
           <p className="mt-2 text-xs text-neutral-400">{t('legal.disclaimerText1')}</p>
           <p className="mt-2 text-xs text-neutral-400">{t('legal.disclaimerText2')}</p>
