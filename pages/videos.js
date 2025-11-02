@@ -13,7 +13,19 @@ export default function VideosPage() {
           </Link>
         </div>
         <h1 className="text-3xl font-bold mb-4">{t('videos.title')}</h1>
-        <p className="text-neutral-300">{t('videos.comingSoon')}</p>
+
+        <div className="rounded-xl overflow-hidden border border-neutral-800 bg-neutral-900/40">
+          <div className="relative w-full" style={{ paddingTop: '56.25%' }}>
+            <iframe
+              className="absolute inset-0 w-full h-full"
+              src="https://www.youtube-nocookie.com/embed/gF5pcxdKwLc"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            />
+          </div>
+        </div>
       </div>
     </div>
   );
