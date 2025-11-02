@@ -8,6 +8,10 @@
     "login": "Connexion",
     "register": "Créer un compte"
   },
+  "videos": {
+    "title": "Vidéos",
+    "comingSoon": "Tutoriels vidéo à venir."
+  },
   "compatCards": {
     "title": "Compatibilité",
     "osTitle": "Systèmes d'exploitation pris en charge",
@@ -21,7 +25,7 @@
     "features": "Avantages",
     "how": "Instructions",
     "pricing": "Tarifs",
-    "faq": "FAQ",
+    "video": "Vidéos",
     "buy": "Acheter",
     "download": "Télécharger",
     "contact": "Contacter",
