@@ -34,10 +34,10 @@ export default function MindsetLanding() {
               <a href="#pricing" className="hover:text-amber-300" onClick={(e) => { e.preventDefault(); const element = document.getElementById('pricing'); if (element) { const y = element.offsetTop - 100; window.scrollTo({ top: y, behavior: 'smooth' }); } }}>{t('nav.pricing')}</a>
               <a href="#faq" className="hover:text-amber-300" onClick={(e) => { e.preventDefault(); const element = document.getElementById('faq'); if (element) { const y = element.offsetTop - 100; window.scrollTo({ top: y, behavior: 'smooth' }); } }}>{t('nav.faq')}</a>
               <a href="#compatibility" className="hover:text-amber-300" onClick={(e) => { e.preventDefault(); const element = document.getElementById('compatibility'); if (element) { const y = element.offsetTop - 100; window.scrollTo({ top: y, behavior: 'smooth' }); } }}>{t('nav.compatibility')}</a>
-              <Link href="/contact" className="hover:text-amber-300">{t('nav.contact')}</Link>
             </nav>
 
             <div className="flex items-center gap-3 ml-4">
+            <LanguageToggle />
             <button 
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)} 
               className="md:hidden text-neutral-200 p-2"
@@ -51,7 +51,7 @@ export default function MindsetLanding() {
                 )}
               </svg>
             </button>
-            <LanguageToggle />
+            <Link href="/contact" className="hidden md:block hover:text-amber-300">{t('nav.contact')}</Link>
             </div>
           </div>
         </div>
