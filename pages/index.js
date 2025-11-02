@@ -189,16 +189,22 @@ export default function MindsetLanding() {
         <p className="mt-3 text-xs text-neutral-400">{t('pricing.disclaimer')}</p>
       </section>
 
-      {/* FAQ */}
+      {/* Compatibilité (remplace l'ancienne FAQ visuelle) */}
       <section id="faq" className="mx-auto max-w-6xl px-4 pb-24">
-        <h2 className="text-3xl font-extrabold">{t('faq.title')}</h2>
+        <h2 className="text-3xl font-extrabold">{t('compatCards.title')}</h2>
         <div className="mt-6 grid md:grid-cols-2 gap-6">
-          {t('faq.questions').slice(0, 2).map((qa, i) => (
-            <div key={i} className="rounded-2xl border border-neutral-800 bg-neutral-900/40 p-5">
-              <div className="font-semibold">{qa.question}</div>
-              <div className="mt-2 text-neutral-300 text-sm">{qa.answer}</div>
-            </div>
-          ))}
+          <div className="rounded-2xl border border-neutral-800 bg-neutral-900/40 p-5">
+            <div className="font-semibold">{t('compatCards.osTitle')}</div>
+            <div className="mt-2 text-neutral-300 text-sm">{t('compatCards.osText')}</div>
+          </div>
+          <div className="rounded-2xl border border-neutral-800 bg-neutral-900/40 p-5">
+            <div className="font-semibold">{t('compatCards.redownloadTitle')}</div>
+            <div className="mt-2 text-neutral-300 text-sm">{t('compatCards.redownloadText')}</div>
+          </div>
+          <div className="rounded-2xl border border-neutral-800 bg-neutral-900/40 p-5 md:col-span-2">
+            <div className="font-semibold">{t('compatCards.brokersTitle')}</div>
+            <div className="mt-2 text-neutral-300 text-sm">{t('compatCards.brokersText')}</div>
+          </div>
         </div>
       </section>
 

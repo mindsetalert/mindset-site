@@ -8,6 +8,15 @@
     "login": "Login",
     "register": "Create Account"
   },
+  "compatCards": {
+    "title": "Compatibility",
+    "osTitle": "Supported operating systems",
+    "osText": "Windows 10/11 (64-bit).",
+    "redownloadTitle": "How to re-download?",
+    "redownloadText": "A link + license key are sent to you by email after purchase.",
+    "brokersTitle": "Broker compatibility",
+    "brokersText": "IQ Edge (Close P&L and Realized P&L tested) and TradingView (P&L reading depending on widgets/displays); improvements in progress. Results may vary depending on your settings (theme, font, zoom, language)."
+  },
   "nav": {
     "features": "Features",
     "how": "How it works",
