@@ -193,7 +193,7 @@ export default function MindsetLanding() {
       <section id="faq" className="mx-auto max-w-6xl px-4 pb-24">
         <h2 className="text-3xl font-extrabold">{t('faq.title')}</h2>
         <div className="mt-6 grid md:grid-cols-2 gap-6">
-          {t('faq.questions').map((qa, i) => (
+          {t('faq.questions').slice(0, 2).map((qa, i) => (
             <div key={i} className="rounded-2xl border border-neutral-800 bg-neutral-900/40 p-5">
               <div className="font-semibold">{qa.question}</div>
               <div className="mt-2 text-neutral-300 text-sm">{qa.answer}</div>
