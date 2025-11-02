@@ -29,13 +29,13 @@ export default function SiteHeader() {
               <LanguageToggle />
             </div>
             <nav className="flex items-center gap-6 text-sm">
-              <a href="#features" className="hover:text-amber-300" onClick={(e) => { e.preventDefault(); const element = document.getElementById('features'); if (element) { const y = element.offsetTop - 100; window.scrollTo({ top: y, behavior: 'smooth' }); } }}>{t('nav.features')}</a>
+              <Link href="/#features" className="hover:text-amber-300">{t('nav.features')}</Link>
               <Link href="/software" className="hover:text-amber-300">{t('nav.software')}</Link>
-              <a href="#how" className="hover:text-amber-300 whitespace-nowrap" onClick={(e) => { e.preventDefault(); const element = document.getElementById('how'); if (element) { const y = element.offsetTop - 200; window.scrollTo({ top: y, behavior: 'smooth' }); } }}>{t('nav.how')}</a>
-              <a href="#pricing" className="hover:text-amber-300" onClick={(e) => { e.preventDefault(); const element = document.getElementById('pricing'); if (element) { const y = element.offsetTop - 100; window.scrollTo({ top: y, behavior: 'smooth' }); } }}>{t('nav.pricing')}</a>
+              <Link href="/#how" className="hover:text-amber-300 whitespace-nowrap">{t('nav.how')}</Link>
+              <Link href="/#pricing" className="hover:text-amber-300">{t('nav.pricing')}</Link>
               <Link href="/videos" className="hover:text-amber-300">{t('nav.video')}</Link>
-              <a href="#compatibility" className="hover:text-amber-300" onClick={(e) => { e.preventDefault(); const element = document.getElementById('compatibility'); if (element) { const y = element.offsetTop - 100; window.scrollTo({ top: y, behavior: 'smooth' }); } }}>{t('nav.compatibility')}</a>
-              <a href="#legal" className="hover:text-amber-300" onClick={(e) => { e.preventDefault(); const element = document.getElementById('legal'); if (element) { const y = element.offsetTop - 100; window.scrollTo({ top: y, behavior: 'smooth' }); } }}>{t('nav.legal')}</a>
+              <Link href="/#compatibility" className="hover:text-amber-300">{t('nav.compatibility')}</Link>
+              <Link href="/#legal" className="hover:text-amber-300">{t('nav.legal')}</Link>
               <Link href="/contact" className="hover:text-amber-300">{t('nav.contact')}</Link>
             </nav>
           </div>
@@ -61,13 +61,13 @@ export default function SiteHeader() {
       {mobileMenuOpen && (
         <div className="md:hidden bg-neutral-900 border-t border-neutral-800">
           <nav className="flex flex-col gap-4 p-4 text-sm">
-            <a href="#features" className="hover:text-amber-300 py-2" onClick={(e) => { e.preventDefault(); setMobileMenuOpen(false); const element = document.getElementById('features'); if (element) { const y = element.offsetTop - 100; window.scrollTo({ top: y, behavior: 'smooth' }); } }}>{t('nav.features')}</a>
+            <Link href="/#features" className="hover:text-amber-300 py-2" onClick={() => setMobileMenuOpen(false)}>{t('nav.features')}</Link>
             <Link href="/software" className="hover:text-amber-300 py-2" onClick={() => setMobileMenuOpen(false)}>{t('nav.software')}</Link>
-            <a href="#how" className="hover:text-amber-300 py-2 whitespace-nowrap" onClick={(e) => { e.preventDefault(); setMobileMenuOpen(false); const element = document.getElementById('how'); if (element) { const y = element.offsetTop - 200; window.scrollTo({ top: y, behavior: 'smooth' }); } }}>{t('nav.how')}</a>
-            <a href="#pricing" className="hover:text-amber-300 py-2" onClick={(e) => { e.preventDefault(); setMobileMenuOpen(false); const element = document.getElementById('pricing'); if (element) { const y = element.offsetTop - 100; window.scrollTo({ top: y, behavior: 'smooth' }); } }}>{t('nav.pricing')}</a>
+            <Link href="/#how" className="hover:text-amber-300 py-2 whitespace-nowrap" onClick={() => setMobileMenuOpen(false)}>{t('nav.how')}</Link>
+            <Link href="/#pricing" className="hover:text-amber-300 py-2" onClick={() => setMobileMenuOpen(false)}>{t('nav.pricing')}</Link>
             <Link href="/videos" className="hover:text-amber-300 py-2" onClick={() => setMobileMenuOpen(false)}>{t('nav.video')}</Link>
-            <a href="#compatibility" className="hover:text-amber-300 py-2" onClick={(e) => { e.preventDefault(); setMobileMenuOpen(false); const element = document.getElementById('compatibility'); if (element) { const y = element.offsetTop - 100; window.scrollTo({ top: y, behavior: 'smooth' }); } }}>{t('nav.compatibility')}</a>
-            <a href="#legal" className="hover:text-amber-300 py-2" onClick={(e) => { e.preventDefault(); setMobileMenuOpen(false); const element = document.getElementById('legal'); if (element) { const y = element.offsetTop - 100; window.scrollTo({ top: y, behavior: 'smooth' }); } }}>{t('nav.legal')}</a>
+            <Link href="/#compatibility" className="hover:text-amber-300 py-2" onClick={() => setMobileMenuOpen(false)}>{t('nav.compatibility')}</Link>
+            <Link href="/#legal" className="hover:text-amber-300 py-2" onClick={() => setMobileMenuOpen(false)}>{t('nav.legal')}</Link>
             <Link href="/contact" className="hover:text-amber-300 py-2" onClick={() => setMobileMenuOpen(false)}>{t('nav.contact')}</Link>
             <div className="pt-2"><LanguageToggle /></div>
           </nav>
