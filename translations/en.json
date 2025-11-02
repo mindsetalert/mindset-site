@@ -236,11 +236,11 @@
     "nonAffiliationEmphasis": "Important: Mindset – Alert Strategy is completely independent and is not affiliated with, endorsed by, sponsored by, or partnered with any platform, broker, exchange or third‑party provider.",
     "compatibilityTitle": "Platform compatibility",
     "compatibilityText": "The app works by capturing and reading (OCR) a region of your screen. Compatibility depends on the application displayed, its version, your settings (theme, font, zoom, language), resolution and your machine’s performance. No compatibility with any specific app, broker or platform is stated or guaranteed. Please test on your own setup and contact support for questions or feature requests. We are actively working to optimize P&L reading with broker/platform-specific configuration profiles. The list of supported brokers will expand over time; reach out to support to prioritize your platform."
-  },
-  "compatibility": {
-    "osTitle": "Supported operating systems",
-    "osText": "Windows 10/11 (64-bit).",
-    "currentSupportTitle": "Currently tested compatibility",
-    "currentSupportText": "P&L reading on IQ Edge: Close P&L and Realized P&L. Integration is improving continuously; results may vary depending on your settings (theme, font, zoom, language)."
-  }
+    },
+    "compatibility": {
+      "osTitle": "Supported operating systems",
+      "osText": "Windows 10/11 (64-bit).",
+      "currentSupportTitle": "Currently tested compatibility",
+      "currentSupportText": "P&L reading on IQ Edge: Close P&L and Realized P&L. Integration is continuously improving; results may vary depending on your settings (theme, font, zoom, language)."
+    }
 }
