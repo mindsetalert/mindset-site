@@ -1,11 +1,11 @@
 import "@/styles/globals.css";
 import { LanguageProvider } from "../contexts/LanguageContext";
-import HeaderAuth from "../components/HeaderAuth";
+import SiteHeader from "../components/SiteHeader";
 
 export default function App({ Component, pageProps }) {
   return (
     <LanguageProvider>
-      <HeaderAuth />
+      <SiteHeader />
       <Component {...pageProps} />
     </LanguageProvider>
   );
