@@ -253,7 +253,7 @@
     "compatibility": {
       "osTitle": "Supported operating systems",
       "osText": "Windows 10/11 (64-bit).",
-      "currentSupportTitle": "Currently tested compatibility",
-      "currentSupportText": "P&L reading on IQ Edge: Close P&L and Realized P&L. Integration is continuously improving; results may vary depending on your settings (theme, font, zoom, language)."
+      "currentSupportTitle": "Compatible brokers",
+      "currentSupportText": "IQ Edge and TradingView"
     }
 }
