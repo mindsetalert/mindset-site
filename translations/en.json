@@ -10,7 +10,8 @@
   },
   "videos": {
     "title": "Videos",
-    "comingSoon": "Video tutorials coming soon."
+    "comingSoon": "Video tutorials coming soon.",
+    "pnlCaption": "PNL capture"
   },
   "compatCards": {
     "title": "Compatibility",

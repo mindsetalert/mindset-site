@@ -12,7 +12,8 @@ export default function VideosPage() {
             ← {t('account.backToHome')}
           </Link>
         </div>
-        <h1 className="text-3xl font-bold mb-4">{t('videos.title')}</h1>
+        <h1 className="text-3xl font-bold mb-1">{t('videos.title')}</h1>
+        <div className="text-sm text-neutral-400 mb-4">{t('videos.pnlCaption')}</div>
 
         <div className="rounded-xl overflow-hidden border border-neutral-800 bg-neutral-900/40">
           <div className="relative w-full" style={{ paddingTop: '56.25%' }}>
