@@ -11,7 +11,8 @@
   "videos": {
     "title": "Vidéos",
     "comingSoon": "Tutoriels vidéo à venir.",
-    "pnlCaption": "Capture de PNL"
+    "pnlCaption": "Capture de PNL",
+    "fullTitle": "Explication complète du logiciel"
   },
   "compatCards": {
     "title": "Compatibilité",

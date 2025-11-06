@@ -11,7 +11,8 @@
   "videos": {
     "title": "Videos",
     "comingSoon": "Video tutorials coming soon.",
-    "pnlCaption": "PNL capture"
+    "pnlCaption": "PNL capture",
+    "fullTitle": "Full software walkthrough"
   },
   "compatCards": {
     "title": "Compatibility",

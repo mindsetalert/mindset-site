@@ -12,9 +12,25 @@ export default function VideosPage() {
             ← {t('account.backToHome')}
           </Link>
         </div>
-        <h1 className="text-3xl font-bold mb-1">{t('videos.title')}</h1>
-        <div className="text-sm text-neutral-400 mb-4">{t('videos.pnlCaption')}</div>
+        <h1 className="text-3xl font-bold mb-6">{t('videos.title')}</h1>
 
+        {/* 1) Explication complète - FIRST */}
+        <div className="text-sm text-neutral-400 mb-3">{t('videos.fullTitle')}</div>
+        <div className="rounded-xl overflow-hidden border border-neutral-800 bg-neutral-900/40 mb-8">
+          <div className="relative w-full" style={{ paddingTop: '56.25%' }}>
+            <iframe
+              className="absolute inset-0 w-full h-full"
+              src="https://www.youtube-nocookie.com/embed/xD7gx7hjmqY"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            />
+          </div>
+        </div>
+
+        {/* 2) Capture de PNL */}
+        <div className="text-sm text-neutral-400 mb-3">{t('videos.pnlCaption')}</div>
         <div className="rounded-xl overflow-hidden border border-neutral-800 bg-neutral-900/40">
           <div className="relative w-full" style={{ paddingTop: '56.25%' }}>
             <iframe
