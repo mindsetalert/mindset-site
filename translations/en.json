@@ -255,6 +255,6 @@
       "osTitle": "Supported operating systems",
       "osText": "Windows 10/11 (64-bit).",
       "currentSupportTitle": "Compatible brokers",
-      "currentSupportText": "Questrade, DAS Trader Pro, IQ Edge and TradingView"
+      "currentSupportText": "Questrade IQ Edge, DAS Trader Pro and TradingView"
     }
 }
