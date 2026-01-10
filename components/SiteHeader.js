@@ -37,6 +37,7 @@ export default function SiteHeader() {
               <Link href="/#compatibility" className="hover:text-amber-300">{t('nav.compatibility')}</Link>
               <Link href="/#legal" className="hover:text-amber-300">{t('nav.legal')}</Link>
               <Link href="/contact" className="hover:text-amber-300">{t('nav.contact')}</Link>
+              <Link href="/discord" className="px-3 py-1 rounded-md bg-orange-500/20 border border-orange-500/50 text-orange-400 hover:bg-orange-500/30 whitespace-nowrap">🚧 Discord Preview</Link>
             </nav>
           </div>
 
@@ -69,6 +70,7 @@ export default function SiteHeader() {
             <Link href="/#compatibility" className="hover:text-amber-300 py-2" onClick={() => setMobileMenuOpen(false)}>{t('nav.compatibility')}</Link>
             <Link href="/#legal" className="hover:text-amber-300 py-2" onClick={() => setMobileMenuOpen(false)}>{t('nav.legal')}</Link>
             <Link href="/contact" className="hover:text-amber-300 py-2" onClick={() => setMobileMenuOpen(false)}>{t('nav.contact')}</Link>
+            <Link href="/discord" className="py-2 px-3 rounded-md bg-orange-500/20 border border-orange-500/50 text-orange-400" onClick={() => setMobileMenuOpen(false)}>🚧 Discord Preview</Link>
             <div className="pt-2"><LanguageToggle /></div>
           </nav>
         </div>
