@@ -33,7 +33,9 @@
     "contact": "Contact",
     "software": "Software",
     "legal": "Legal",
-    "compatibility": "Compatibility"
+    "compatibility": "Compatibility",
+    "discord": "Discord",
+    "eaRange": "EA Range Bot"
   },
   "hero": {
     "title": "Keep control of your",

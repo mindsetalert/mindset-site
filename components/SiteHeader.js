@@ -35,6 +35,8 @@ export default function SiteHeader() {
               <Link href="/#pricing" className="hover:text-amber-300">{t('nav.pricing')}</Link>
               <Link href="/videos" className="hover:text-amber-300">{t('nav.video')}</Link>
               <Link href="/#compatibility" className="hover:text-amber-300">{t('nav.compatibility')}</Link>
+              <Link href="/#discord" className="hover:text-amber-300">{t('nav.discord')}</Link>
+              <Link href="/#ea-range" className="hover:text-amber-300 whitespace-nowrap">{t('nav.eaRange')}</Link>
               <Link href="/#legal" className="hover:text-amber-300">{t('nav.legal')}</Link>
               <Link href="/contact" className="hover:text-amber-300">{t('nav.contact')}</Link>
             </nav>
@@ -67,6 +69,8 @@ export default function SiteHeader() {
             <Link href="/#pricing" className="hover:text-amber-300 py-2" onClick={() => setMobileMenuOpen(false)}>{t('nav.pricing')}</Link>
             <Link href="/videos" className="hover:text-amber-300 py-2" onClick={() => setMobileMenuOpen(false)}>{t('nav.video')}</Link>
             <Link href="/#compatibility" className="hover:text-amber-300 py-2" onClick={() => setMobileMenuOpen(false)}>{t('nav.compatibility')}</Link>
+            <Link href="/#discord" className="hover:text-amber-300 py-2" onClick={() => setMobileMenuOpen(false)}>{t('nav.discord')}</Link>
+            <Link href="/#ea-range" className="hover:text-amber-300 py-2 whitespace-nowrap" onClick={() => setMobileMenuOpen(false)}>{t('nav.eaRange')}</Link>
             <Link href="/#legal" className="hover:text-amber-300 py-2" onClick={() => setMobileMenuOpen(false)}>{t('nav.legal')}</Link>
             <Link href="/contact" className="hover:text-amber-300 py-2" onClick={() => setMobileMenuOpen(false)}>{t('nav.contact')}</Link>
             <div className="pt-2"><LanguageToggle /></div>
