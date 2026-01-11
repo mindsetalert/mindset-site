@@ -134,6 +134,9 @@ export default function MindsetLanding() {
           </div>
           
           <div className="text-center">
+            <div className="inline-block mb-4 px-4 py-2 rounded-full bg-orange-500/20 border border-orange-500/50 text-orange-400 text-sm font-bold">
+              FOREX (Gold)
+            </div>
             <h2 className="text-4xl md:text-5xl font-extrabold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-amber-300">
               {t('eaRangeSection.title')}
             </h2>
