@@ -122,6 +122,9 @@ export default function MindsetLanding() {
 
       {/* EA Range Bot Section */}
       <section id="ea-range" className="mx-auto max-w-6xl px-4 py-16 border-t border-neutral-800">
+        <h2 className="text-center text-4xl md:text-6xl font-extrabold tracking-tight mb-10 text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-amber-300 to-orange-400">
+          FOREX GOLD TRADING BOT
+        </h2>
         <div className="rounded-3xl overflow-hidden border-2 border-orange-500/50 bg-gradient-to-br from-neutral-900 to-neutral-950 p-8">
           <div className="relative w-full h-64 md:h-80 mb-6 rounded-2xl overflow-hidden">
             <Image 
@@ -134,9 +137,6 @@ export default function MindsetLanding() {
           </div>
           
           <div className="text-center">
-            <div className="inline-block mb-4 px-4 py-2 rounded-full bg-orange-500/20 border border-orange-500/50 text-orange-400 text-sm font-bold">
-              FOREX (Gold)
-            </div>
             <h2 className="text-4xl md:text-5xl font-extrabold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-amber-300">
               {t('eaRangeSection.title')}
             </h2>
