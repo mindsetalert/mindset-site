@@ -1,4 +1,4 @@
-﻿import React, { useState } from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useTranslation } from "../hooks/useTranslation";
@@ -10,7 +10,7 @@ export default function MindsetLanding() {
   
   return (
     <div className="min-h-screen bg-neutral-950 text-neutral-100 selection:bg-amber-400/40">
-      {/* Header global gÃ©rÃ© par SiteHeader */}
+      {/* Header global géré par SiteHeader */}
 
       {/* Hero */}
       <section className="relative isolate overflow-hidden">
@@ -54,9 +54,80 @@ export default function MindsetLanding() {
         </div>
       </section>
 
+      {/* Features */}
+      <section id="features" className="mx-auto max-w-6xl px-4 py-16">
+        <div className="grid md:grid-cols-3 gap-6">
+          {t('features.items').map((f, i) => (
+            <div key={i} className="rounded-2xl border border-neutral-800 bg-neutral-900/40 p-6">
+              <h3 className="text-lg font-semibold text-neutral-50">{f.title}</h3>
+              <p className="mt-2 text-sm text-neutral-300">{f.description}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* How it works */}
+      <section id="how" className="mx-auto max-w-6xl px-4 pb-4">
+        <div className="rounded-2xl bg-neutral-900/40 border border-neutral-800 p-6">
+          <h2 className="text-2xl font-bold">{t('howItWorks.title')}</h2>
+          <ol className="mt-4 space-y-3 text-neutral-300 list-decimal list-inside">
+            {t('howItWorks.steps').map((step, i) => (
+              <li key={i}>{step}</li>
+            ))}
+          </ol>
+        </div>
+      </section>
+
+      {/* Pricing (2 boîtes) */}
+      <section id="pricing" className="mx-auto max-w-6xl px-4 py-16">
+        <h2 className="text-4xl md:text-5xl font-extrabold">{t('pricing.title')}</h2>
+        <p className="mt-2 text-neutral-300">{t('pricing.subtitle')}</p>
+
+        <div className="grid md:grid-cols-2 gap-6 mt-8">
+          {/* Mensuel */}
+          <div className="rounded-2xl border border-neutral-800 bg-neutral-900/40 p-6 flex flex-col">
+            <h3 className="text-xl font-semibold">{t('pricing.monthly.title')}</h3>
+            <p className="text-sm text-neutral-300">{t('pricing.monthly.description')}</p>
+            <div className="text-4xl font-black mt-4">
+              {t('pricing.monthly.price')} <span className="text-base font-semibold text-neutral-400">{t('pricing.monthly.period')}</span>
+            </div>
+            <ul className="mt-4 space-y-2 text-sm text-neutral-300">
+              {t('pricing.monthly.features').map((feature, i) => (
+                <li key={i}>{feature}</li>
+              ))}
+            </ul>
+            <Link href="/payment?plan=monthly" className="block mt-6 px-4 py-3 rounded-xl bg-amber-500 text-neutral-900 font-semibold hover:bg-amber-400 text-center">
+              {t('pricing.monthly.button')}
+            </Link>
+            <p className="mt-2 text-xs text-neutral-400">{t('pricing.monthly.note')}</p>
+          </div>
+
+          {/* Annuel -10% */}
+          <div className="rounded-2xl border-2 border-amber-500 bg-neutral-900/60 p-6 flex flex-col">
+            <div className="text-xs px-2 py-1 rounded-full bg-green-700/20 text-green-400 w-max">{t('pricing.yearly.discount')}</div>
+            <h3 className="text-xl font-semibold mt-2">{t('pricing.yearly.title')}</h3>
+            <p className="text-sm text-neutral-300">{t('pricing.yearly.description')}</p>
+            <div className="text-4xl font-black mt-4">
+              {t('pricing.yearly.price')} <span className="text-base font-semibold text-neutral-400">{t('pricing.yearly.period')}</span>
+            </div>
+            <ul className="mt-4 space-y-2 text-sm text-neutral-300">
+              {t('pricing.yearly.features').map((feature, i) => (
+                <li key={i}>{feature}</li>
+              ))}
+            </ul>
+            <Link href="/payment?plan=yearly" className="block mt-6 px-4 py-3 rounded-xl bg-amber-500 text-neutral-900 font-semibold hover:bg-amber-400 text-center">
+              {t('pricing.yearly.button')}
+            </Link>
+            <p className="mt-2 text-xs text-neutral-400">{t('pricing.yearly.note')}</p>
+          </div>
+        </div>
+
+        <p className="mt-3 text-xs text-neutral-400">{t('pricing.disclaimer')}</p>
+      </section>
+
       {/* Discord Section */}
       <section id="discord" className="mx-auto max-w-6xl px-4 py-16">
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-6 mb-6">
           <div className="relative h-24 w-24 overflow-hidden rounded-2xl bg-neutral-900/50 ring-1 ring-neutral-800 flex-shrink-0">
             <Image src="/discord-logo.png" alt={t('discordSection.logoAlt')} fill className="object-cover" />
           </div>
@@ -66,7 +137,7 @@ export default function MindsetLanding() {
           </div>
         </div>
         
-        <p className="text-neutral-400 text-base mb-8 mt-6 max-w-3xl">
+        <p className="text-neutral-400 text-base mb-4 mt-6 max-w-3xl">
           {t('discordSection.description')}
         </p>
 
@@ -161,78 +232,7 @@ export default function MindsetLanding() {
         </div>
       </section>
 
-      {/* Features */}
-      <section id="features" className="mx-auto max-w-6xl px-4 py-16">
-        <div className="grid md:grid-cols-3 gap-6">
-          {t('features.items').map((f, i) => (
-            <div key={i} className="rounded-2xl border border-neutral-800 bg-neutral-900/40 p-6">
-              <h3 className="text-lg font-semibold text-neutral-50">{f.title}</h3>
-              <p className="mt-2 text-sm text-neutral-300">{f.description}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* How it works */}
-      <section id="how" className="mx-auto max-w-6xl px-4 pb-4">
-        <div className="rounded-2xl bg-neutral-900/40 border border-neutral-800 p-6">
-          <h2 className="text-2xl font-bold">{t('howItWorks.title')}</h2>
-          <ol className="mt-4 space-y-3 text-neutral-300 list-decimal list-inside">
-            {t('howItWorks.steps').map((step, i) => (
-              <li key={i}>{step}</li>
-            ))}
-          </ol>
-        </div>
-      </section>
-
-      {/* Pricing (2 boÃ®tes) */}
-      <section id="pricing" className="mx-auto max-w-6xl px-4 py-16">
-        <h2 className="text-4xl md:text-5xl font-extrabold">{t('pricing.title')}</h2>
-        <p className="mt-2 text-neutral-300">{t('pricing.subtitle')}</p>
-
-        <div className="grid md:grid-cols-2 gap-6 mt-8">
-          {/* Mensuel */}
-          <div className="rounded-2xl border border-neutral-800 bg-neutral-900/40 p-6 flex flex-col">
-            <h3 className="text-xl font-semibold">{t('pricing.monthly.title')}</h3>
-            <p className="text-sm text-neutral-300">{t('pricing.monthly.description')}</p>
-            <div className="text-4xl font-black mt-4">
-              {t('pricing.monthly.price')} <span className="text-base font-semibold text-neutral-400">{t('pricing.monthly.period')}</span>
-            </div>
-            <ul className="mt-4 space-y-2 text-sm text-neutral-300">
-              {t('pricing.monthly.features').map((feature, i) => (
-                <li key={i}>{feature}</li>
-              ))}
-            </ul>
-            <Link href="/payment?plan=monthly" className="block mt-6 px-4 py-3 rounded-xl bg-amber-500 text-neutral-900 font-semibold hover:bg-amber-400 text-center">
-              {t('pricing.monthly.button')}
-            </Link>
-            <p className="mt-2 text-xs text-neutral-400">{t('pricing.monthly.note')}</p>
-          </div>
-
-          {/* Annuel -10% */}
-          <div className="rounded-2xl border-2 border-amber-500 bg-neutral-900/60 p-6 flex flex-col">
-            <div className="text-xs px-2 py-1 rounded-full bg-green-700/20 text-green-400 w-max">{t('pricing.yearly.discount')}</div>
-            <h3 className="text-xl font-semibold mt-2">{t('pricing.yearly.title')}</h3>
-            <p className="text-sm text-neutral-300">{t('pricing.yearly.description')}</p>
-            <div className="text-4xl font-black mt-4">
-              {t('pricing.yearly.price')} <span className="text-base font-semibold text-neutral-400">{t('pricing.yearly.period')}</span>
-            </div>
-            <ul className="mt-4 space-y-2 text-sm text-neutral-300">
-              {t('pricing.yearly.features').map((feature, i) => (
-                <li key={i}>{feature}</li>
-              ))}
-            </ul>
-            <Link href="/payment?plan=yearly" className="block mt-6 px-4 py-3 rounded-xl bg-amber-500 text-neutral-900 font-semibold hover:bg-amber-400 text-center">
-              {t('pricing.yearly.button')}
-            </Link>
-            <p className="mt-2 text-xs text-neutral-400">{t('pricing.yearly.note')}</p>
-          </div>
-        </div>
-
-        <p className="mt-3 text-xs text-neutral-400">{t('pricing.disclaimer')}</p>
-      </section>
-
-      {/* CompatibilitÃ© (remplace l'ancienne FAQ visuelle) */}
+      {/* Compatibilité (remplace l'ancienne FAQ visuelle) */}
       <section id="faq" className="mx-auto max-w-6xl px-4 pb-24">
         <h2 className="text-4xl md:text-5xl font-extrabold">{t('compatCards.title')}</h2>
         <div className="mt-6 grid md:grid-cols-2 gap-6">
@@ -251,7 +251,7 @@ export default function MindsetLanding() {
         </div>
       </section>
 
-      {/* Mentions lÃ©gales & compatibilitÃ© */}
+      {/* Mentions légales & compatibilité */}
       <section id="compatibility" className="border-t border-neutral-800 bg-neutral-950/40">
         <div className="mx-auto max-w-6xl px-4 py-10">
           <div id="legal" />
