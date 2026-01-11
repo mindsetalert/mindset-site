@@ -65,6 +65,10 @@ export default function MindsetLanding() {
             <p className="mt-2 text-neutral-300 text-lg">{t('discordSection.subtitle')}</p>
           </div>
         </div>
+        
+        <p className="text-neutral-400 text-base mb-8 mt-6 max-w-3xl">
+          {t('discordSection.description')}
+        </p>
 
         <div className="grid md:grid-cols-2 gap-6 mt-8">
           {/* Discord Only */}
