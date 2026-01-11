@@ -48,6 +48,38 @@
     "seeHow": "See how it works",
     "createAccount": "Create Account"
   },
+  "discordSection": {
+    "logoAlt": "Mindset Alert Strategy logo",
+    "title": "Discord Community",
+    "subtitle": "Get access to our private Discord and choose your monthly plan.",
+    "discordOnly": {
+      "title": "Discord Access",
+      "description": "Access to the private Discord community",
+      "price": "$25",
+      "period": "USD / month",
+      "features": [
+        "Community support",
+        "Strategy sharing",
+        "Exclusive resources"
+      ],
+      "cta": "View offer"
+    },
+    "bundle": {
+      "badge": "BEST VALUE",
+      "title": "Discord + Software Bundle",
+      "description": "Discord + Mindset Alert Strategy",
+      "price": "$40",
+      "period": "USD / month",
+      "features": [
+        "Everything in Discord Access",
+        "Mindset software license included",
+        "Priority technical support",
+        "Automatic updates"
+      ],
+      "cta": "View offer"
+    },
+    "keepExisting": "The one-time purchase of the software remains available (nothing changes)."
+  },
   "socialProof": {
     "voiceAlerts": "✅ Voice alerts in French/English, adjustable in real time.",
     "ocrMultiBroker": "✅ Multi-broker P&L OCR reading (customizable zone)."
