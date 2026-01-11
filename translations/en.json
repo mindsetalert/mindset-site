@@ -1,293 +1,293 @@
-﻿{
-    "header":  {
-                   "loading":  "Loadingâ€¦",
-                   "home":  "Home",
-                   "myAccount":  "My Account",
-                   "createAccount":  "Sign Up",
-                   "logout":  "Logout",
-                   "login":  "Login",
-                   "register":  "Create Account"
-               },
-    "videos":  {
-                   "title":  "Videos",
-                   "comingSoon":  "Video tutorials coming soon.",
-                   "pnlCaption":  "PNL capture",
-                   "fullTitle":  "Full software walkthrough"
-               },
-    "compatCards":  {
-                        "title":  "Compatibility",
-                        "osTitle":  "Supported operating systems",
-                        "osText":  "Windows 10/11 (64-bit).",
-                        "redownloadTitle":  "How to re-download?",
-                        "redownloadText":  "A link + license key are sent to you by email after purchase.",
-                        "brokersTitle":  "Broker compatibility",
-                        "brokersText":  "IQ Edge (Close P\u0026L and Realized P\u0026L tested) and TradingView (P\u0026L reading depending on widgets/displays); improvements in progress. Results may vary depending on your settings (theme, font, zoom, language)."
-                    },
-    "nav":  {
-                "features":  "Features",
-                "how":  "How it works",
-                "pricing":  "Pricing",
-                "video":  "Videos",
-                "buy":  "Buy",
-                "download":  "Download",
-                "contact":  "Contact",
-                "software":  "Software",
-                "legal":  "Legal",
-                "compatibility":  "Compatibility"
-            },
-    "hero":  {
-                 "title":  "Keep control of your",
-                 "titleHighlight":  "trading",
-                 "titleEnd":  "in real time.",
-                 "description":  "The",
-                 "appName":  "Mindset â€“ Alert Strategy",
-                 "description2":  "application monitors your P\u0026L via OCR, enforces your risk rules (Max Loss, Drawdown, Daily Goal) and triggers",
-                 "description3":  "audio/voice",
-                 "description4":  "alerts instantly to protect your capital.",
-                 "buyNow":  "Buy now",
-                 "seeHow":  "See how it works",
-                 "createAccount":  "Create Account"
-             },
-    "discordSection":  {
-                           "logoAlt":  "Mindset Alert Strategy logo",
-                           "title":  "Discord Community",
-                           "subtitle":  "Get access to our private Discord and choose your monthly plan.",
-                           "discordOnly":  {
-                                               "title":  "Discord Access",
-                                               "description":  "Access to the private Discord community",
-                                               "price":  "$25",
-                                               "period":  "USD / month",
-                                               "features":  [
-                                                                "Community support",
-                                                                "Strategy sharing",
-                                                                "Exclusive resources"
-                                                            ],
-                                               "cta":  "View offer"
-                                           },
-                           "bundle":  {
-                                          "badge":  "BEST VALUE",
-                                          "title":  "Discord + Software Bundle",
-                                          "description":  "Discord + Mindset Alert Strategy",
-                                          "price":  "$40",
-                                          "period":  "USD / month",
-                                          "features":  [
-                                                           "Everything in Discord Access",
-                                                           "Mindset software license included",
-                                                           "Priority technical support",
-                                                           "Automatic updates"
-                                                       ],
-                                          "cta":  "View offer"
-                                      },
-                           "keepExisting":  "The one-time purchase of the software remains available (nothing changes).",
-                           "description":  "Connect with other traders, share your strategies, ask questions and get real-time support. Choose the subscription that fits you."
-                       },
-    "socialProof":  {
-                        "voiceAlerts":  "âœ… Voice alerts in French/English, adjustable in real time.",
-                        "ocrMultiBroker":  "âœ… Multi-broker P\u0026L OCR reading (customizable zone)."
-                    },
-    "features":  {
-                     "title":  "Features",
-                     "items":  [
-                                   {
-                                       "title":  "ðŸŽ¯ Automated Discipline",
-                                       "description":  "Set your risk limits once. Our AI monitors your P\u0026L in real-time and alerts you instantly before emotions take over. Avoid 90% of emotional losses."
-                                   },
-                                   {
-                                       "title":  "ðŸ”Š Robust Audio/Voice",
-                                       "description":  "Your personalized alert system. A sound or voice warns you immediately when you breach your limits. Stay in control despite emotions."
-                                   },
-                                   {
-                                       "title":  "ðŸŒ International",
-                                       "description":  "Your linguistic comfort guaranteed. French or English, choose your language. Maximize your performance by staying in your comfort zone."
-                                   },
-                                   {
-                                       "title":  "âš¡ Quick Setup",
-                                       "description":  "Simple configuration. In a few clicks, you\u0027re operational. Select your P\u0026L zone, choose your alerts and let the magic happen."
-                                   },
-                                   {
-                                       "title":  "ðŸ“Š Tracking \u0026 Analysis",
-                                       "description":  "Analyze your performance in detail. Monthly calendar of your results, evolution charts and personalized monthly goals. Transform your data into winning strategies."
-                                   },
-                                   {
-                                       "title":  "ðŸ”„ Continuous Evolution",
-                                       "description":  "Grow with us. Regular updates based on your questions and feedback, for an experience that constantly improves."
-                                   }
-                               ]
-                 },
-    "howItWorks":  {
-                       "title":  "How it works",
-                       "steps":  [
-                                     "Download and install the app (Windows installation assistant).",
-                                     "Enter your license key (purchase email).",
-                                     "Select the P\u0026L zone on your screen and test voice/beeps.",
-                                     "Set your rules: Max Loss, Drawdown, Daily Goal, Redâ†’Green.",
-                                     "Let the app run; it alerts you immediately on breach."
-                                 ]
-                   },
-    "pricing":  {
-                    "title":  "Pricing",
-                    "subtitle":  "Choose the plan that suits you. Taxes included in price.",
-                    "monthly":  {
-                                    "title":  "Monthly",
-                                    "description":  "1 workstation Â· Renewed monthly",
-                                    "price":  "$29.99",
-                                    "period":  "USD /month",
-                                    "features":  [
-                                                     "âœ” Per-machine license",
-                                                     "âœ” Updates included",
-                                                     "âœ” Email support"
-                                                 ],
-                                    "button":  "Buy Monthly",
-                                    "note":  "Cancel anytime."
-                                },
-                    "yearly":  {
-                                   "title":  "Yearly",
-                                   "description":  "1 workstation Â· Annual billing",
-                                   "price":  "$323.90",
-                                   "period":  "USD /year",
-                                   "features":  [
-                                                    "âœ” Per-machine license",
-                                                    "âœ” Updates included"
-                                                ],
-                                   "button":  "Buy Yearly",
-                                   "note":  "One-time billing, annual renewal.",
-                                   "discount":  "Save 10%"
-                               },
-                    "disclaimer":  "* Prices are indicative for the mockup. We will adjust after validation."
-                },
-    "faq":  {
-                "title":  "FAQ",
-                "questions":  [
-                                  {
-                                      "question":  "What OS is supported?",
-                                      "answer":  "Windows 10/11 (64-bit)."
-                                  },
-                                  {
-                                      "question":  "How to re-download?",
-                                      "answer":  "A link + license key are sent to you by email after purchase."
-                                  },
-                                  {
-                                      "question":  "Can I change PC?",
-                                      "answer":  "Yes, via support we can reset your license once per year."
-                                  },
-                                  {
-                                      "question":  "Is there a demo?",
-                                      "answer":  "A demo limited to beeps (without TTS) will be offered."
-                                  }
-                              ]
-            },
-    "footer":  {
-                   "copyright":  "Â© {year} Mindset â€“ Alert Strategy",
-                   "privacy":  "Privacy",
-                   "terms":  "Terms",
-                   "support":  "Support"
-               },
-    "account":  {
-                    "loading":  "Loadingâ€¦",
-                    "backToHome":  "â† Back to home",
-                    "title":  "My Account",
-                    "email":  "Email",
-                    "manageSubscription":  "Manage Subscription",
-                    "subscriptionNote":  "Cancel, update your payment method, view invoices, etc.",
-                    "myLicenses":  "My Licenses",
-                    "refresh":  "Refresh",
-                    "loadingLicenses":  "Loadingâ€¦",
-                    "noLicenses":  "No licenses at the moment.",
-                    "license":  "License",
-                    "status":  "Status",
-                    "expires":  "Expires",
-                    "downloadSoftware":  "Download Software",
-                    "softwareVersion":  "latest version 1.0.3 - 2025-11-09",
-                    "generateLink":  "Generate Link",
-                    "buyPlan":  "Buy a Plan",
-                    "buyPlanSubtitle":  "Choose the plan that suits you"
-                },
-    "register":  {
-                     "title":  "Create Account",
-                     "emailPlaceholder":  "Email",
-                     "passwordPlaceholder":  "Password",
-                     "creating":  "Creatingâ€¦",
-                     "createButton":  "Create Account",
-                     "alreadyHaveAccount":  "Already have an account?",
-                     "login":  "Sign in",
-                     "successTitle":  "Account created successfully!",
-                     "verifyEmail":  "Please check your email inbox and click on the validation link we sent you.",
-                     "checkSpam":  "Remember to check your spam folder if you don\u0027t see the email.",
-                     "goToLogin":  "Go to login page"
-                 },
-    "login":  {
-                  "title":  "Login",
-                  "emailPlaceholder":  "Email",
-                  "passwordPlaceholder":  "Password",
-                  "connecting":  "Connectingâ€¦",
-                  "loginButton":  "Sign in",
-                  "forgotPassword":  "Forgot password?",
-                  "noAccount":  "No account?",
-                  "createAccount":  "Create account"
-              },
-    "errors":  {
-                   "emailNotConfirmed":  "Email not confirmed. Please check your email inbox and click on the validation link.",
-                   "invalidCredentials":  "Invalid email or password.",
-                   "userAlreadyExists":  "An account already exists with this email.",
-                   "weakPassword":  "Password must be at least 6 characters.",
-                   "invalidEmail":  "Invalid email address."
-               },
-    "software":  {
-                     "title":  "Software Overview",
-                     "subtitle":  "Discover the features of Mindset Alert Strategy",
-                     "backToHome":  "â† Back to home",
-                     "screenshots":  {
-                                         "alertWindow":  {
-                                                             "title":  "Main Alert Window",
-                                                             "description":  "Main interface with real-time P\u0026L monitoring. Configure your risk limits (Max Loss, Drawdown, Daily Goal) and receive instant voice alerts when you breach your thresholds."
-                                                         },
-                                         "statsCalendar":  {
-                                                               "title":  "Statistics Calendar",
-                                                               "description":  "Track your performance day by day with the monthly calendar. Quickly visualize your winning and losing sessions, identify your best trading days."
-                                                           },
-                                         "statsChart":  {
-                                                            "title":  "Statistics Charts",
-                                                            "description":  "Analyze your evolution with detailed performance charts. Track your progress, identify trends and optimize your trading strategy."
-                                                        },
-                                         "dailyGoal":  {
-                                                           "title":  "Weekly Goal and Research",
-                                                           "description":  "Set your weekly goals (Weekly Goal) and analyze your detailed statistics with the Weekly Research section. Summary table of your weeks with P\u0026L, winning/losing days, win rate and trends. Stay disciplined and measure your progress week after week."
-                                                       },
-                                         "monthlyGoal":  {
-                                                             "title":  "Monthly Goal",
-                                                             "description":  "Set your monthly goals and track your overall performance. Stay focused on your long-term objectives and celebrate your achievements."
-                                                         }
-                                     }
-                 },
-    "contact":  {
-                    "backToHome":  "â† Back to home",
-                    "title":  "Contact Us",
-                    "subtitle":  "Have a question? Send us a message and we\u0027ll get back to you as soon as possible.",
-                    "name":  "Name",
-                    "namePlaceholder":  "Your name",
-                    "email":  "Email",
-                    "emailPlaceholder":  "your@email.com",
-                    "subject":  "Subject",
-                    "subjectPlaceholder":  "What is it about?",
-                    "message":  "Message",
-                    "messagePlaceholder":  "Your message...",
-                    "send":  "Send Message",
-                    "sending":  "Sending...",
-                    "success":  "Message sent successfully! We\u0027ll reply soon.",
-                    "error":  "Error sending message. Please try again."
-                },
-    "legal":  {
-                  "disclaimerTitle":  "Legal notice and disclaimer",
-                  "disclaimerText1":  "Mindset â€“ Alert Strategy is an educational assistance tool. It does not provide financial advice or investment recommendations. Trading involves significant risk of loss. You are solely responsible for your decisions, your settings and how you use the software. The authors and publishers cannot be held liable for any direct or indirect loss related to the use of this app or to its content (videos, guides).",
-                  "disclaimerText2":  "All trademarks, logos and platform names mentioned are the property of their respective owners. Mindset â€“ Alert Strategy is not affiliated with, sponsored by, or endorsed by any broker or thirdâ€‘party platform.",
-                  "nonAffiliationEmphasis":  "Important: Mindset â€“ Alert Strategy is completely independent and is not affiliated with, endorsed by, sponsored by, or partnered with any platform, broker, exchange or thirdâ€‘party provider.",
-                  "compatibilityTitle":  "Platform compatibility",
-                  "compatibilityText":  "The app works by capturing and reading (OCR) a region of your screen. Compatibility depends on the application displayed, its version, your settings (theme, font, zoom, language), resolution and your machineâ€™s performance. No compatibility with any specific app, broker or platform is stated or guaranteed. Please test on your own setup and contact support for questions or feature requests. We are actively working to optimize P\u0026L reading with broker/platform-specific configuration profiles. The list of supported brokers will expand over time; reach out to support to prioritize your platform."
-              },
-    "compatibility":  {
-                          "osTitle":  "Supported operating systems",
-                          "osText":  "Windows 10/11 (64-bit).",
-                          "currentSupportTitle":  "Compatible brokers",
-                          "currentSupportText":  "Questrade IQ Edge, DAS Trader Pro and TradingView"
-                      }
+{
+  "header": {
+    "loading": "Loading…",
+    "home": "Home",
+    "myAccount": "My Account",
+    "createAccount": "Sign Up",
+    "logout": "Logout",
+    "login": "Login",
+    "register": "Create Account"
+  },
+  "videos": {
+    "title": "Videos",
+    "comingSoon": "Video tutorials coming soon.",
+    "pnlCaption": "PNL capture",
+    "fullTitle": "Full software walkthrough"
+  },
+  "compatCards": {
+    "title": "Compatibility",
+    "osTitle": "Supported operating systems",
+    "osText": "Windows 10/11 (64-bit).",
+    "redownloadTitle": "How to re-download?",
+    "redownloadText": "A link + license key are sent to you by email after purchase.",
+    "brokersTitle": "Broker compatibility",
+    "brokersText": "IQ Edge (Close P&L and Realized P&L tested) and TradingView (P&L reading depending on widgets/displays); improvements in progress. Results may vary depending on your settings (theme, font, zoom, language)."
+  },
+  "nav": {
+    "features": "Features",
+    "how": "How it works",
+    "pricing": "Pricing",
+    "video": "Videos",
+    "buy": "Buy",
+    "download": "Download",
+    "contact": "Contact",
+    "software": "Software",
+    "legal": "Legal",
+    "compatibility": "Compatibility"
+  },
+  "hero": {
+    "title": "Keep control of your",
+    "titleHighlight": "trading",
+    "titleEnd": "in real time.",
+    "description": "The",
+    "appName": "Mindset – Alert Strategy",
+    "description2": "application monitors your P&L via OCR, enforces your risk rules (Max Loss, Drawdown, Daily Goal) and triggers",
+    "description3": "audio/voice",
+    "description4": "alerts instantly to protect your capital.",
+    "buyNow": "Buy now",
+    "seeHow": "See how it works",
+    "createAccount": "Create Account"
+  },
+  "socialProof": {
+    "voiceAlerts": "✅ Voice alerts in French/English, adjustable in real time.",
+    "ocrMultiBroker": "✅ Multi-broker P&L OCR reading (customizable zone)."
+  },
+  "features": {
+    "title": "Features",
+    "items": [
+      {
+        "title": "🎯 Automated Discipline",
+        "description": "Set your risk limits once. Our AI monitors your P&L in real-time and alerts you instantly before emotions take over. Avoid 90% of emotional losses."
+      },
+      {
+        "title": "🔊 Robust Audio/Voice",
+        "description": "Your personalized alert system. A sound or voice warns you immediately when you breach your limits. Stay in control despite emotions."
+      },
+      {
+        "title": "🌍 International",
+        "description": "Your linguistic comfort guaranteed. French or English, choose your language. Maximize your performance by staying in your comfort zone."
+      },
+      {
+        "title": "⚡ Quick Setup",
+        "description": "Simple configuration. In a few clicks, you're operational. Select your P&L zone, choose your alerts and let the magic happen."
+      },
+      {
+        "title": "📊 Tracking & Analysis",
+        "description": "Analyze your performance in detail. Monthly calendar of your results, evolution charts and personalized monthly goals. Transform your data into winning strategies."
+      },
+      {
+        "title": "🔄 Continuous Evolution",
+        "description": "Grow with us. Regular updates based on your questions and feedback, for an experience that constantly improves."
+      }
+    ]
+  },
+  "howItWorks": {
+    "title": "How it works",
+    "steps": [
+      "Download and install the app (Windows installation assistant).",
+      "Enter your license key (purchase email).",
+      "Select the P&L zone on your screen and test voice/beeps.",
+      "Set your rules: Max Loss, Drawdown, Daily Goal, Red→Green.",
+      "Let the app run; it alerts you immediately on breach."
+    ]
+  },
+  "pricing": {
+    "title": "Pricing",
+    "subtitle": "Choose the plan that suits you. Taxes included in price.",
+    "monthly": {
+      "title": "Monthly",
+      "description": "1 workstation · Renewed monthly",
+      "price": "$29.99",
+      "period": "USD /month",
+      "features": [
+        "✔ Per-machine license",
+        "✔ Updates included",
+        "✔ Email support"
+      ],
+      "button": "Buy Monthly",
+      "note": "Cancel anytime."
+    },
+    "yearly": {
+      "title": "Yearly",
+      "description": "1 workstation · Annual billing",
+      "price": "$323.90",
+      "period": "USD /year",
+      "features": [
+        "✔ Per-machine license",
+        "✔ Updates included"
+      ],
+      "button": "Buy Yearly",
+      "note": "One-time billing, annual renewal.",
+      "discount": "Save 10%"
+    },
+    "disclaimer": "* Prices are indicative for the mockup. We will adjust after validation."
+  },
+  "faq": {
+    "title": "FAQ",
+    "questions": [
+      {
+        "question": "What OS is supported?",
+        "answer": "Windows 10/11 (64-bit)."
+      },
+      {
+        "question": "How to re-download?",
+        "answer": "A link + license key are sent to you by email after purchase."
+      },
+      {
+        "question": "Can I change PC?",
+        "answer": "Yes, via support we can reset your license once per year."
+      },
+      {
+        "question": "Is there a demo?",
+        "answer": "A demo limited to beeps (without TTS) will be offered."
+      }
+    ]
+  },
+  "footer": {
+    "copyright": "© {year} Mindset – Alert Strategy",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "support": "Support"
+  },
+  "account": {
+    "loading": "Loading…",
+    "backToHome": "← Back to home",
+    "title": "My Account",
+    "email": "Email",
+    "manageSubscription": "Manage Subscription",
+    "subscriptionNote": "Cancel, update your payment method, view invoices, etc.",
+    "myLicenses": "My Licenses",
+    "refresh": "Refresh",
+    "loadingLicenses": "Loading…",
+    "noLicenses": "No licenses at the moment.",
+    "license": "License",
+    "status": "Status",
+    "expires": "Expires",
+    "downloadSoftware": "Download Software",
+    "softwareVersion": "latest version 1.0.3 - 2025-11-09",
+    "generateLink": "Generate Link",
+    "buyPlan": "Buy a Plan",
+    "buyPlanSubtitle": "Choose the plan that suits you"
+  },
+  "register": {
+    "title": "Create Account",
+    "emailPlaceholder": "Email",
+    "passwordPlaceholder": "Password",
+    "creating": "Creating…",
+    "createButton": "Create Account",
+    "alreadyHaveAccount": "Already have an account?",
+    "login": "Sign in",
+    "successTitle": "Account created successfully!",
+    "verifyEmail": "Please check your email inbox and click on the validation link we sent you.",
+    "checkSpam": "Remember to check your spam folder if you don't see the email.",
+    "goToLogin": "Go to login page"
+  },
+  "login": {
+    "title": "Login",
+    "emailPlaceholder": "Email",
+    "passwordPlaceholder": "Password",
+    "connecting": "Connecting…",
+    "loginButton": "Sign in",
+    "forgotPassword": "Forgot password?",
+    "noAccount": "No account?",
+    "createAccount": "Create account"
+  },
+  "errors": {
+    "emailNotConfirmed": "Email not confirmed. Please check your email inbox and click on the validation link.",
+    "invalidCredentials": "Invalid email or password.",
+    "userAlreadyExists": "An account already exists with this email.",
+    "weakPassword": "Password must be at least 6 characters.",
+    "invalidEmail": "Invalid email address."
+  },
+  "software": {
+    "title": "Software Overview",
+    "subtitle": "Discover the features of Mindset Alert Strategy",
+    "backToHome": "← Back to home",
+    "screenshots": {
+      "alertWindow": {
+        "title": "Main Alert Window",
+        "description": "Main interface with real-time P&L monitoring. Configure your risk limits (Max Loss, Drawdown, Daily Goal) and receive instant voice alerts when you breach your thresholds."
+      },
+      "statsCalendar": {
+        "title": "Statistics Calendar",
+        "description": "Track your performance day by day with the monthly calendar. Quickly visualize your winning and losing sessions, identify your best trading days."
+      },
+      "statsChart": {
+        "title": "Statistics Charts",
+        "description": "Analyze your evolution with detailed performance charts. Track your progress, identify trends and optimize your trading strategy."
+      },
+      "dailyGoal": {
+        "title": "Weekly Goal and Research",
+        "description": "Set your weekly goals (Weekly Goal) and analyze your detailed statistics with the Weekly Research section. Summary table of your weeks with P&L, winning/losing days, win rate and trends. Stay disciplined and measure your progress week after week."
+      },
+      "monthlyGoal": {
+        "title": "Monthly Goal",
+        "description": "Set your monthly goals and track your overall performance. Stay focused on your long-term objectives and celebrate your achievements."
+      }
+    }
+  },
+  "discordSection": {
+    "logoAlt": "Mindset Alert Strategy logo",
+    "title": "Discord Community",
+    "subtitle": "Join our private trading community",
+    "description": "Connect with other traders, share your strategies, ask questions and get real-time support. Choose the subscription that fits you.",
+    "discordOnly": {
+      "title": "Discord Access",
+      "description": "Access to private Discord community",
+      "price": "$25",
+      "period": "USD / month",
+      "features": [
+        "Community support",
+        "Strategy sharing",
+        "Exclusive resources"
+      ],
+      "cta": "See offer"
+    },
+    "bundle": {
+      "badge": "BEST CHOICE",
+      "title": "Discord + Software Bundle",
+      "description": "Discord + Mindset Alert Strategy",
+      "price": "$40",
+      "period": "USD / month",
+      "features": [
+        "Everything from Discord Access",
+        "Mindset software license included",
+        "Priority technical support",
+        "Automatic updates"
+      ],
+      "cta": "See offer"
+    },
+    "keepExisting": "Individual software purchase remains available (nothing changes)."
+  },
+  "contact": {
+    "backToHome": "← Back to home",
+    "title": "Contact Us",
+    "subtitle": "Have a question? Send us a message and we'll get back to you as soon as possible.",
+    "name": "Name",
+    "namePlaceholder": "Your name",
+    "email": "Email",
+    "emailPlaceholder": "your@email.com",
+    "subject": "Subject",
+    "subjectPlaceholder": "What is it about?",
+    "message": "Message",
+    "messagePlaceholder": "Your message...",
+    "send": "Send Message",
+    "sending": "Sending...",
+    "success": "Message sent successfully! We'll reply soon.",
+    "error": "Error sending message. Please try again."
+  },
+  "legal": {
+    "disclaimerTitle": "Legal notice and disclaimer",
+    "disclaimerText1": "Mindset – Alert Strategy is an educational assistance tool. It does not provide financial advice or investment recommendations. Trading involves significant risk of loss. You are solely responsible for your decisions, your settings and how you use the software. The authors and publishers cannot be held liable for any direct or indirect loss related to the use of this app or to its content (videos, guides).",
+    "disclaimerText2": "All trademarks, logos and platform names mentioned are the property of their respective owners. Mindset – Alert Strategy is not affiliated with, sponsored by, or endorsed by any broker or third‑party platform.",
+    "nonAffiliationEmphasis": "Important: Mindset – Alert Strategy is completely independent and is not affiliated with, endorsed by, sponsored by, or partnered with any platform, broker, exchange or third‑party provider.",
+    "compatibilityTitle": "Platform compatibility",
+    "compatibilityText": "The app works by capturing and reading (OCR) a region of your screen. Compatibility depends on the application displayed, its version, your settings (theme, font, zoom, language), resolution and your machine’s performance. No compatibility with any specific app, broker or platform is stated or guaranteed. Please test on your own setup and contact support for questions or feature requests. We are actively working to optimize P&L reading with broker/platform-specific configuration profiles. The list of supported brokers will expand over time; reach out to support to prioritize your platform."
+    },
+    "compatibility": {
+      "osTitle": "Supported operating systems",
+      "osText": "Windows 10/11 (64-bit).",
+      "currentSupportTitle": "Compatible brokers",
+      "currentSupportText": "Questrade IQ Edge, DAS Trader Pro and TradingView"
+    }
 }
