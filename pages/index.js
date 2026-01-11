@@ -126,7 +126,7 @@ export default function MindsetLanding() {
           FOREX GOLD TRADING BOT
         </h2>
         <div className="rounded-3xl border-2 border-orange-500/50 bg-gradient-to-br from-neutral-900 to-neutral-950 p-8">
-          <div className="relative w-full h-96 md:h-[28rem] mb-6 rounded-2xl overflow-hidden">
+          <div className="relative w-full h-[30rem] md:h-[34rem] mb-6 rounded-2xl overflow-hidden">
             <Image 
               src="/ea-range-banner.png" 
               alt="EA Range - Automated Range Bot" 
