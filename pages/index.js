@@ -81,7 +81,7 @@ export default function MindsetLanding() {
             </div>
             <ul className="mt-4 space-y-2 text-sm text-neutral-300">
               {t('discordSection.discordOnly.features').map((feature, i) => (
-                <li key={i}>âœ” {feature}</li>
+                <li key={i}>✔ {feature}</li>
               ))}
             </ul>
             <Link
@@ -105,7 +105,7 @@ export default function MindsetLanding() {
             </div>
             <ul className="mt-4 space-y-2 text-sm text-neutral-300">
               {t('discordSection.bundle.features').map((feature, i) => (
-                <li key={i}>âœ” {feature}</li>
+                <li key={i}>✔ {feature}</li>
               ))}
             </ul>
             <Link
@@ -125,7 +125,7 @@ export default function MindsetLanding() {
         <h2 className="text-center text-4xl md:text-6xl font-extrabold tracking-tight mb-10 text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-amber-300 to-orange-400">
           FOREX GOLD TRADING BOT
         </h2>
-        <div className="rounded-3xl overflow-hidden border-2 border-orange-500/50 bg-gradient-to-br from-neutral-900 to-neutral-950 p-8">
+        <div className="rounded-3xl border-2 border-orange-500/50 bg-gradient-to-br from-neutral-900 to-neutral-950 p-8">
           <div className="relative w-full h-64 md:h-80 mb-6 rounded-2xl overflow-hidden">
             <Image 
               src="/ea-range-banner.png" 
@@ -137,7 +137,7 @@ export default function MindsetLanding() {
           </div>
           
           <div className="text-center">
-            <h2 className="text-4xl md:text-5xl font-extrabold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-amber-300">
+            <h2 className="text-4xl md:text-5xl font-extrabold mb-4 leading-[1.15] py-1 text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-amber-300">
               {t('eaRangeSection.title')}
             </h2>
             
