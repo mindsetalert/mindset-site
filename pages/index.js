@@ -126,37 +126,37 @@ export default function MindsetLanding() {
           FOREX GOLD TRADING BOT
         </h2>
         <div className="rounded-3xl border-2 border-orange-500/50 bg-gradient-to-br from-neutral-900 to-neutral-950 p-8">
-          <div className="relative w-full h-[28rem] md:h-[36rem] mb-4 rounded-2xl overflow-hidden">
+          <div className="relative w-full h-96 md:h-[28rem] mb-6 rounded-2xl overflow-hidden">
             <Image 
               src="/ea-range-banner.png" 
               alt="EA Range - Automated Range Bot" 
               fill
-              className="object-contain"
+              className="object-cover object-center"
               priority
             />
           </div>
           
           <div className="text-center">
-            <h3 className="text-2xl md:text-3xl font-extrabold mb-2 text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-amber-300">
+            <h3 className="text-3xl md:text-4xl font-extrabold mb-3 text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-amber-300">
               {t('eaRangeSection.title')}
             </h3>
             
-            <p className="text-neutral-300 text-sm mb-3 max-w-2xl mx-auto">
+            <p className="text-neutral-300 text-base mb-4 max-w-2xl mx-auto">
               {t('eaRangeSection.description')}
             </p>
 
-            <div className="text-4xl font-black text-orange-400 mb-3">
-              $999<span className="text-xl">.99</span>
-              <div className="text-xs font-semibold text-neutral-400 mt-1">USD - Paiement unique</div>
+            <div className="text-5xl md:text-6xl font-black text-orange-400 mb-4">
+              $999<span className="text-2xl md:text-3xl">.99</span>
+              <div className="text-sm font-semibold text-neutral-400 mt-2">USD - Paiement unique</div>
             </div>
 
             <button
-              className="px-6 py-3 rounded-xl bg-gradient-to-r from-orange-500 to-amber-500 text-black font-bold hover:from-orange-400 hover:to-amber-400 transition-all transform hover:scale-105"
+              className="px-7 py-3 rounded-xl bg-gradient-to-r from-orange-500 to-amber-500 text-black font-bold text-base hover:from-orange-400 hover:to-amber-400 transition-all transform hover:scale-105"
             >
               {t('eaRangeSection.cta')}
             </button>
 
-            <p className="mt-2 text-xs text-neutral-500">{t('eaRangeSection.note')}</p>
+            <p className="mt-3 text-xs text-neutral-500">{t('eaRangeSection.note')}</p>
           </div>
         </div>
       </section>
