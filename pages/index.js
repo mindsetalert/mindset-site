@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+﻿import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useTranslation } from "../hooks/useTranslation";
@@ -10,7 +10,7 @@ export default function MindsetLanding() {
   
   return (
     <div className="min-h-screen bg-neutral-950 text-neutral-100 selection:bg-amber-400/40">
-      {/* Header global géré par SiteHeader */}
+      {/* Header global gÃ©rÃ© par SiteHeader */}
 
       {/* Hero */}
       <section className="relative isolate overflow-hidden">
@@ -57,12 +57,12 @@ export default function MindsetLanding() {
       {/* Discord Section */}
       <section id="discord" className="mx-auto max-w-6xl px-4 py-16">
         <div className="flex items-center gap-4">
-          <div className="relative h-12 w-12 overflow-hidden rounded-2xl bg-neutral-900/50 ring-1 ring-neutral-800">
-            <Image src="/logo.png" alt={t('discordSection.logoAlt')} fill className="object-cover" />
+          <div className="relative h-24 w-24 overflow-hidden rounded-2xl bg-neutral-900/50 ring-1 ring-neutral-800 flex-shrink-0">
+            <Image src="/discord-logo.png" alt={t('discordSection.logoAlt')} fill className="object-cover" />
           </div>
           <div>
-            <h2 className="text-3xl font-extrabold">{t('discordSection.title')}</h2>
-            <p className="mt-1 text-neutral-300">{t('discordSection.subtitle')}</p>
+            <h2 className="text-4xl md:text-5xl font-extrabold">{t('discordSection.title')}</h2>
+            <p className="mt-2 text-neutral-300 text-lg">{t('discordSection.subtitle')}</p>
           </div>
         </div>
 
@@ -77,7 +77,7 @@ export default function MindsetLanding() {
             </div>
             <ul className="mt-4 space-y-2 text-sm text-neutral-300">
               {t('discordSection.discordOnly.features').map((feature, i) => (
-                <li key={i}>✔ {feature}</li>
+                <li key={i}>âœ” {feature}</li>
               ))}
             </ul>
             <Link
@@ -101,7 +101,7 @@ export default function MindsetLanding() {
             </div>
             <ul className="mt-4 space-y-2 text-sm text-neutral-300">
               {t('discordSection.bundle.features').map((feature, i) => (
-                <li key={i}>✔ {feature}</li>
+                <li key={i}>âœ” {feature}</li>
               ))}
             </ul>
             <Link
@@ -140,9 +140,9 @@ export default function MindsetLanding() {
         </div>
       </section>
 
-      {/* Pricing (2 boîtes) */}
+      {/* Pricing (2 boÃ®tes) */}
       <section id="pricing" className="mx-auto max-w-6xl px-4 py-16">
-        <h2 className="text-3xl font-extrabold">{t('pricing.title')}</h2>
+        <h2 className="text-4xl md:text-5xl font-extrabold">{t('pricing.title')}</h2>
         <p className="mt-2 text-neutral-300">{t('pricing.subtitle')}</p>
 
         <div className="grid md:grid-cols-2 gap-6 mt-8">
@@ -187,9 +187,9 @@ export default function MindsetLanding() {
         <p className="mt-3 text-xs text-neutral-400">{t('pricing.disclaimer')}</p>
       </section>
 
-      {/* Compatibilité (remplace l'ancienne FAQ visuelle) */}
+      {/* CompatibilitÃ© (remplace l'ancienne FAQ visuelle) */}
       <section id="faq" className="mx-auto max-w-6xl px-4 pb-24">
-        <h2 className="text-3xl font-extrabold">{t('compatCards.title')}</h2>
+        <h2 className="text-4xl md:text-5xl font-extrabold">{t('compatCards.title')}</h2>
         <div className="mt-6 grid md:grid-cols-2 gap-6">
           <div className="rounded-2xl border border-neutral-800 bg-neutral-900/40 p-5">
             <div className="font-semibold">{t('compatCards.osTitle')}</div>
@@ -206,7 +206,7 @@ export default function MindsetLanding() {
         </div>
       </section>
 
-      {/* Mentions légales & compatibilité */}
+      {/* Mentions lÃ©gales & compatibilitÃ© */}
       <section id="compatibility" className="border-t border-neutral-800 bg-neutral-950/40">
         <div className="mx-auto max-w-6xl px-4 py-10">
           <div id="legal" />
