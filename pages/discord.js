@@ -13,8 +13,8 @@ export default function DiscordPage() {
         </Link>
 
         <div className="mt-8 flex items-center gap-4">
-          <div className="relative h-12 w-12 overflow-hidden rounded-2xl bg-neutral-900/50 ring-1 ring-neutral-800">
-            <Image src="/logo.png" alt={t("discordSection.logoAlt")} fill className="object-cover" />
+          <div className="relative h-16 w-16 overflow-hidden rounded-2xl bg-neutral-900/50 ring-1 ring-neutral-800">
+            <Image src="/discord-logo.png" alt={t("discordSection.logoAlt")} fill className="object-cover" />
           </div>
           <div>
             <h1 className="text-4xl font-extrabold">{t("discordSection.title")}</h1>
