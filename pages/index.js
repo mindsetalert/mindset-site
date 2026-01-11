@@ -145,7 +145,7 @@ export default function MindsetLanding() {
       </section>
 
       {/* Discord Section */}
-      <section id="discord" className="mx-auto max-w-6xl px-4 py-16">
+      <section id="discord" className="mx-auto max-w-6xl px-4 py-16 scroll-mt-24">
         <div className="flex items-center gap-6 mb-6">
           <div className="relative h-24 w-24 overflow-hidden rounded-2xl bg-neutral-900/50 ring-1 ring-neutral-800 flex-shrink-0">
             <Image src="/discord-logo.png" alt={t('discordSection.logoAlt')} fill className="object-cover" />
@@ -211,7 +211,7 @@ export default function MindsetLanding() {
       </section>
 
       {/* EA Range Bot Section */}
-      <section id="ea-range" className="mx-auto max-w-6xl px-4 py-16 border-t border-neutral-800">
+      <section id="ea-range" className="mx-auto max-w-6xl px-4 py-16 border-t border-neutral-800 scroll-mt-24">
         <h2 className="text-center text-4xl md:text-6xl font-extrabold tracking-tight mb-10 text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-amber-300 to-orange-400">
           FOREX GOLD TRADING BOT
         </h2>
