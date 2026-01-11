@@ -259,6 +259,12 @@
     },
     "keepExisting": "L'achat individuel du logiciel reste disponible (rien ne change)."
   },
+  "eaRangeSection": {
+    "title": "EA Range Bot",
+    "description": "Description à venir - Bot automatisé pour trader les ranges.",
+    "cta": "Acheter maintenant",
+    "note": "Licence à vie - Paiement unique"
+  },
   "contact": {
     "backToHome": "← Retour à l'accueil",
     "title": "Contactez-nous",

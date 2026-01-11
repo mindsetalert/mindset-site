@@ -259,6 +259,12 @@
     },
     "keepExisting": "Individual software purchase remains available (nothing changes)."
   },
+  "eaRangeSection": {
+    "title": "EA Range Bot",
+    "description": "Description coming soon - Automated bot for range trading.",
+    "cta": "Buy now",
+    "note": "Lifetime license - One-time payment"
+  },
   "contact": {
     "backToHome": "← Back to home",
     "title": "Contact Us",

@@ -120,6 +120,44 @@ export default function MindsetLanding() {
         <p className="mt-3 text-xs text-neutral-400">{t('discordSection.keepExisting')}</p>
       </section>
 
+      {/* EA Range Bot Section */}
+      <section id="ea-range" className="mx-auto max-w-6xl px-4 py-16 border-t border-neutral-800">
+        <div className="rounded-3xl overflow-hidden border-2 border-orange-500/50 bg-gradient-to-br from-neutral-900 to-neutral-950 p-8">
+          <div className="relative w-full h-64 md:h-80 mb-6 rounded-2xl overflow-hidden">
+            <Image 
+              src="/ea-range-banner.png" 
+              alt="EA Range - Automated Range Bot" 
+              fill
+              className="object-cover"
+              priority
+            />
+          </div>
+          
+          <div className="text-center">
+            <h2 className="text-4xl md:text-5xl font-extrabold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-amber-300">
+              {t('eaRangeSection.title')}
+            </h2>
+            
+            <p className="text-neutral-300 text-lg mb-6 max-w-3xl mx-auto">
+              {t('eaRangeSection.description')}
+            </p>
+
+            <div className="text-6xl font-black text-orange-400 mb-6">
+              $999<span className="text-3xl">.99</span>
+              <div className="text-base font-semibold text-neutral-400 mt-2">USD - Paiement unique</div>
+            </div>
+
+            <button
+              className="px-8 py-4 rounded-xl bg-gradient-to-r from-orange-500 to-amber-500 text-black font-bold text-lg hover:from-orange-400 hover:to-amber-400 transition-all transform hover:scale-105"
+            >
+              {t('eaRangeSection.cta')}
+            </button>
+
+            <p className="mt-4 text-xs text-neutral-500">{t('eaRangeSection.note')}</p>
+          </div>
+        </div>
+      </section>
+
       {/* Features */}
       <section id="features" className="mx-auto max-w-6xl px-4 py-16">
         <div className="grid md:grid-cols-3 gap-6">
