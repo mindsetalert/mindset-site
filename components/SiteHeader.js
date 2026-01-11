@@ -32,7 +32,6 @@ export default function SiteHeader() {
               <Link href="/#features" className="hover:text-amber-300">{t('nav.features')}</Link>
               <Link href="/software" className="hover:text-amber-300">{t('nav.software')}</Link>
               <Link href="/#how" className="hover:text-amber-300 whitespace-nowrap">{t('nav.how')}</Link>
-              <Link href="/#pricing" className="hover:text-amber-300">{t('nav.pricing')}</Link>
               <Link href="/videos" className="hover:text-amber-300">{t('nav.video')}</Link>
               <Link href="/#compatibility" className="hover:text-amber-300">{t('nav.compatibility')}</Link>
               <Link href="/#discord" className="hover:text-amber-300">{t('nav.discord')}</Link>
@@ -66,7 +65,6 @@ export default function SiteHeader() {
             <Link href="/#features" className="hover:text-amber-300 py-2" onClick={() => setMobileMenuOpen(false)}>{t('nav.features')}</Link>
             <Link href="/software" className="hover:text-amber-300 py-2" onClick={() => setMobileMenuOpen(false)}>{t('nav.software')}</Link>
             <Link href="/#how" className="hover:text-amber-300 py-2 whitespace-nowrap" onClick={() => setMobileMenuOpen(false)}>{t('nav.how')}</Link>
-            <Link href="/#pricing" className="hover:text-amber-300 py-2" onClick={() => setMobileMenuOpen(false)}>{t('nav.pricing')}</Link>
             <Link href="/videos" className="hover:text-amber-300 py-2" onClick={() => setMobileMenuOpen(false)}>{t('nav.video')}</Link>
             <Link href="/#compatibility" className="hover:text-amber-300 py-2" onClick={() => setMobileMenuOpen(false)}>{t('nav.compatibility')}</Link>
             <Link href="/#discord" className="hover:text-amber-300 py-2" onClick={() => setMobileMenuOpen(false)}>{t('nav.discord')}</Link>
